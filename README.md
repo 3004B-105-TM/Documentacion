@@ -5,6 +5,12 @@
 
 **Link de la página:**  http://142.93.10.227:5173/
 
+**Cuenta normal:**   Pueden crear una, solo den sign in con Google.
+
+
+**Cuenta admin:**  
+
+**email:** a01284623@tec.mx         **password:** admin_cc10!
 
 ## 📑 Índice
 
