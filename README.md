@@ -234,6 +234,9 @@ Se puede ver funcionales en video demo.
 ---
 
 - ✅ **Pruebas automatizadas:**
+  - SonarQube:
+  - ![Captura de pantalla 2025-06-10 084001](https://github.com/user-attachments/assets/d0bed7f6-9353-44d6-ae98-3919e46d8e7d)
+  
   - Cada integrante contribuyó con 10 pruebas usando:
     - `Vitest` para componentes
     - `Cypress` para integración
