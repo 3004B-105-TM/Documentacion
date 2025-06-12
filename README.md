@@ -17,13 +17,13 @@
 
 ## 1. Aplicación de Metodología y Gestión de Proyectos (M1)
 
-- **Cierres de Sprints:** Se realizaron entregas iterativas cada 2 semanas con objetivos claros.
+- **Cierres de Sprints:** Se realizaron entregas iterativas cada 5 semanas con objetivos claros.
 - **Seguimiento de Historias de Usuario:** Seguimos y terminamos features, supervisando via GitHub Projects.
 - **Cumplimiento de Requisitos:** Cada historia de usuario fue validada con criterios de aceptación. Una fue quitada, tras una sesión con socio (implementar SonarQube en repositorio).
 - **Adherencia al manifiesto ágil:** Priorizamos individuos, software funcionando, colaboración con cliente y respuesta ante el cambio.
 - **Satisfacción del Cliente:** Feedback continuo, adaptaciones rápidas. Les agrado nuestra solución, y en la presentación no recibimos comentarios negativos.
 - **Lecciones Aprendidas:** 
-  - Reuniones Daily ayudan a detectar bloqueos tempranos.
+  - Reuniones Daily ayudan a detectar bloqueos tempranos, resolver dudas.
   - Importancia de escribir código limpio desde el inicio.
   - Mantener estructura estable en repositorio para tener mejor comprensión en equipo.
 ---
@@ -90,6 +90,8 @@ Esta sección describe la arquitectura de alto nivel de la solución, incluyendo
 | Cola de trabajos              | Redis                    |
 | Calidad de código             | SonarQube                |
 | Autenticación                 | Clerk                    |
+| Hostear DB                    | Aiven Console            |
+| Maquina Virtual               | Digital Ocean            |
 ---
 
 ## 3. Desarrollo (M3, M4 y Reto)
@@ -116,7 +118,7 @@ Aunque no se utilizó **Next.js**, se siguieron convenciones inspiradas en sus b
 
 /src
 /pages             → Vistas principales del sistema
-      /components  → Componentes específicos de página si llegaba a código muy largop / saturado para mejorar lectura
+      /components  → Componentes específicos de página si llegaba a código muy largo / saturado para mejorar lectura
 /components        → Componentes reutilizables
 /hooks             → Lógica de React personalizada
 /utils             → Funciones auxiliares y helpers
@@ -127,20 +129,21 @@ Aunque no se utilizó **Next.js**, se siguieron convenciones inspiradas en sus b
 - **Componentes puros y desacoplados**
 - Separación de lógica visual, lógica de estado y lógica de conexión
 
-
 ---
 
 ## 4. Calidad (M5)
-### Historias de Usuario:
+### Historias de Usuario: 
+Se puede ver funcionales en video demo.
 #### HU-001 - Login de Usuario
 **Descripción:** Como usuario y trabajador de la empresa, quiero poder ingresar a la plataforma.  
 **Criterios de Aceptación:**
 - Ingreso con correo y contraseña.
 - Permitir uso de cuenta Google para mayor velocidad.
 - Mensaje de error si son incorrectos o inválidos.
+  
 **Caso de uso**
-  ![image](https://github.com/user-attachments/assets/f4a9411d-d099-47b1-ad77-9a9666beb910)
 
+  ![image](https://github.com/user-attachments/assets/f4a9411d-d099-47b1-ad77-9a9666beb910)
 ---
 
 #### HU-002 - Resolver Problemas de Programación
@@ -150,7 +153,9 @@ Aunque no se utilizó **Next.js**, se siguieron convenciones inspiradas en sus b
 - Acceder a sección “Problemas de programación”.
 - Seleccionar problema a resolver.
 - Obtener XP y puntos en caso de responder correctamente.
+
 **Caso de uso**
+
   ![Captura de pantalla 2025-03-09 173425](https://github.com/user-attachments/assets/da73723c-a7cc-4c73-bedb-00d23e5a4d3a)
 
 ---
@@ -161,7 +166,9 @@ Aunque no se utilizó **Next.js**, se siguieron convenciones inspiradas en sus b
 - Opciones de filtro visibles.
 - Lista actualizada automáticamente.
 - Posibilidad de quitar filtros.
+
 **Caso de uso**
+  
   ![Captura de pantalla 2025-06-11 205221](https://github.com/user-attachments/assets/20b44053-3ece-4ca5-b924-320a2e6e797a)
 
 ---
@@ -172,17 +179,21 @@ Aunque no se utilizó **Next.js**, se siguieron convenciones inspiradas en sus b
 - Página con descripción al hacer clic.
 - Mostrar dificultad, etiquetas y link original.
 - Botón para regresar.
+
 **Caso de uso**
-  
+ ![Captura de pantalla 2025-06-11 204641](https://github.com/user-attachments/assets/2e38d060-f3b7-49a6-9cb5-3a7aff7059c8)
+ 
 ---
 
 #### HU-005 - Escribir y Ejecutar Código
 **Descripción:** Como usuario, quiero escribir y ejecutar mi código para comprobar si funciona.  
 **Criterios de Aceptación:**
 - Editor integrado.
-- Botón “Ejecutar” que envía a Judge0.
+- Botón “Ejecutar” que envía a VM don de se crea contenedor en lenguaje.
 - Resultados mostrados en la interfaz.
+
 **Caso de uso**
+![Captura de pantalla 2025-06-11 205822](https://github.com/user-attachments/assets/0c199293-7c66-42f5-ab26-2bb54eaf9f54)
 
 ---
 
@@ -193,15 +204,20 @@ Aunque no se utilizó **Next.js**, se siguieron convenciones inspiradas en sus b
 - Notificación de éxito.
 - Actualización en perfil.
 - Solo puede comprar usuario si alcanza por puntos y quedan productos disponibles.
+
 **Caso de uso**
-  
+  ![Captura de pantalla 2025-06-11 205101](https://github.com/user-attachments/assets/95ae88f8-8a4d-4436-aa45-ac6be848ebe0)
+
 ---
 
 #### HU-007 - Dashboard de Avances
 **Descripción:** Como usuario, quiero ver mi avance y el de mis compañeros.  
 **Criterios de Aceptación:**
 - Acceder a información de otros usuarios.
+
 **Caso de uso**
+
+![Captura de pantalla 2025-06-11 205221](https://github.com/user-attachments/assets/c8f5c5e1-9017-4677-8862-ef9dd28eddcd)
 
 
 - ✅ **Pruebas automatizadas:**
