@@ -222,6 +222,7 @@ Se puede ver funcionales en video demo.
 
  ![Captura de pantalla 2025-06-11 204641](https://github.com/user-attachments/assets/2e38d060-f3b7-49a6-9cb5-3a7aff7059c8)
 
+---
 
 - ✅ **Pruebas automatizadas:**
   - Cada integrante contribuyó con 10 pruebas usando:
@@ -240,11 +241,7 @@ Se puede ver funcionales en video demo.
 
 ## 5. Deployment (M3 y Reto)
 
-- ✅ Aplicación desplegada en servidor con Docker Compose.
 - Frontend en http://142.93.10.227:5173/
-- Backend accesible mediante contenedor con API.
-- Configuraciones para entorno `.env` y producción.
-
 ---
 
 ## 6. CI/CD con GitHub Actions
