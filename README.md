@@ -3,6 +3,8 @@
 📹 **Video funcionalidad de la aplicación:**  
 [![Ver Video](https://img.youtube.com/vi/v5wk9jZ-Slo/0.jpg)](https://www.youtube.com/watch?v=v5wk9jZ-Slo)
 
+** Link de la página:**  http://142.93.10.227:5173/
+
 ## 📑 Índice
 
 1. [Aplicación de Metodología y Gestión de Proyectos (M1)](#1-aplicación-de-metodología-y-gestión-de-proyectos-m1)
