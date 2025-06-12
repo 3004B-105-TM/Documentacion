@@ -181,8 +181,9 @@ Se puede ver funcionales en video demo.
 - Botón para regresar.
 
 **Caso de uso**
- ![Captura de pantalla 2025-06-11 204641](https://github.com/user-attachments/assets/2e38d060-f3b7-49a6-9cb5-3a7aff7059c8)
- 
+
+ ![Captura de pantalla 2025-06-11 205221](https://github.com/user-attachments/assets/c8f5c5e1-9017-4677-8862-ef9dd28eddcd)
+
 ---
 
 #### HU-005 - Escribir y Ejecutar Código
@@ -193,6 +194,7 @@ Se puede ver funcionales en video demo.
 - Resultados mostrados en la interfaz.
 
 **Caso de uso**
+
 ![Captura de pantalla 2025-06-11 205822](https://github.com/user-attachments/assets/0c199293-7c66-42f5-ab26-2bb54eaf9f54)
 
 ---
@@ -206,6 +208,7 @@ Se puede ver funcionales en video demo.
 - Solo puede comprar usuario si alcanza por puntos y quedan productos disponibles.
 
 **Caso de uso**
+
   ![Captura de pantalla 2025-06-11 205101](https://github.com/user-attachments/assets/95ae88f8-8a4d-4436-aa45-ac6be848ebe0)
 
 ---
@@ -217,7 +220,7 @@ Se puede ver funcionales en video demo.
 
 **Caso de uso**
 
-![Captura de pantalla 2025-06-11 205221](https://github.com/user-attachments/assets/c8f5c5e1-9017-4677-8862-ef9dd28eddcd)
+ ![Captura de pantalla 2025-06-11 204641](https://github.com/user-attachments/assets/2e38d060-f3b7-49a6-9cb5-3a7aff7059c8)
 
 
 - ✅ **Pruebas automatizadas:**
