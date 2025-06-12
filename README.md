@@ -1,5 +1,8 @@
 # 📘 Documentación del Proyecto Final - Tech Mahindra Code Challenge
 
+📹 **Video funcionalidad de la aplicación:**  
+[![Ver Video](https://img.youtube.com/vi/v5wk9jZ-Slo/0.jpg)](https://www.youtube.com/watch?v=v5wk9jZ-Slo)
+
 ## 📑 Índice
 
 1. [Aplicación de Metodología y Gestión de Proyectos (M1)](#1-aplicación-de-metodología-y-gestión-de-proyectos-m1)
@@ -8,8 +11,7 @@
 4. [Calidad (M5)](#4-calidad-m5)
 5. [Deployment (M3 y Reto)](#5-deployment-m3-y-reto)
 6. [CI/CD con GitHub Actions](#6-cicd-con-github-actions)
-7. [ReadMe Actualizado](#7-readme-actualizado)
-8. [Seguimiento del Reto](#8-seguimiento-del-reto)
+7. [Seguimiento del Reto](#7-seguimiento-del-reto)
 
 ---
 
@@ -233,24 +235,13 @@ Aunque no se utilizó **Next.js**, se siguieron convenciones inspiradas en sus b
 - ✅ Docker build & deploy:
   - Revisión y pruebas antes de producción.
 
----
 
-## 7. ReadMe Actualizado
-
-- Índice funcional
-- Diagrama embebido
-- Evidencia clara y documentada
-- Seguimiento de desarrollo y calidad
-
----
 
 ## 8. Seguimiento del Reto
 
-📹 **Video funcionalidad de la aplicación:**  
-[🔗 Ver video en Drive](https://drive.google.com/your-link)
 
 📊 **Presentación final:**  
-[🔗 Ver presentación](https://docs.google.com/presentation/your-link)
+[tm_final.pdf](https://github.com/user-attachments/files/20701967/tm_final.pdf)
 
 ---
 
