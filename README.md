@@ -251,7 +251,7 @@ Se puede ver funcionales en video demo.
 - ✅ **Evidencia de ejecución:**
   - `TestRun #2` - Automatizadas
 
-📁 Ver carpeta `/evidencias/` con capturas de ejecución, carpeta en front (tests- persona) tiene sus archivos-
+📁 Ver carpeta `/tests/` con capturas de ejecución, carpeta en front (tests- persona) tiene sus archivos-
 
 correr npx vitest en tm-front
 
