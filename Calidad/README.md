@@ -183,8 +183,9 @@ El plan de pruebas cubre los siguientes aspectos:
 
 Todas estas pruebas fueron validades de manera manual durante el desarrollo de nuestro código, y se presentaron avances a nuestros profesores para validar su uso. No son las pruebas que fueron automatizadas.
 
+---
 
-### Equipo de Calidad
+## Equipo de Calidad
 Roles de cada miembro del equipo:
 - Fernando Morán Fougerat: Validación de pruebas de estrés y unitarias.
 - Imanol Armando González Solís: Validación de pruebas de carga.
@@ -192,7 +193,7 @@ Roles de cada miembro del equipo:
 - Ramiro Alejandro Garza Villarreal: Validación de pruebas de aceptación y unitarias.
 
 
-### Estándares aplicados 
+## Estándares aplicados 
 Para este proyecto, estaremos siguiendo diferentes estándares para poder garantizar la calidad del software, usaremos los siguientes estándares:
 - **ISO/IEC 25010** - Modelo de calidad del software que define características como funcionalidad, confiabilidad, usabilidad, eficiencia, mantenibilidad y portabilidad.
 - **ISO/IEC 12207** - Estándar que establece procesos para el desarrollo y mantenimiento de software.
@@ -958,14 +959,6 @@ Durante el proyecto se fomentará una comunicación abierta para gestionar los r
 - **Comunicación con socio formador:** Reportes regulares y discusión de riesgos y soluciones.  
 - **Documentación:** Registro detallado de riesgos, mitigaciones y respuestas.  
 - **Feedback:** Retroalimentación continua del equipo para mejorar gestión de riesgos.  
-
----
-
-### 7. Conclusión
-
-En este documento identificamos, evaluamos y creamos planes de mitigación para los riesgos que pueden afectar el desarrollo de nuestro proyecto para Code Courses. Entre los riesgos más críticos destacan la caída de servicios externos durante la presentación (RI-006), la corrupción de la base de datos (RI-010) y la sobrecarga del servidor (RI-005). Para evitar y poder abordar estos riesgos, deberemos seguir los planes de acción que hemos desarrollado.
-
-El proyecto presenta un nivel de riesgo moderado, sin embargo, una buena ejecución de nuestras tareas y seguimiento a los estándares y planes de mitigación propuestos reducirán de manera efectiva su impacto. Un desarrollo proactivo en la prevención y control de riesgos garantizará la estabilidad y seguridad de nuestro sistema, minimizando interrupciones y ofreciendo una plataforma confiable para los usuarios de Tech Mahindra.
 
 ---
 
