@@ -12,7 +12,7 @@
 - [2.6 Pruebas funcionales](#pruebas-funcionales)
 - [2.7 Pruebas unitarias](#pruebas-unitarias)
 - [2.8 Pruebas de aceptación](#pruebas-de-aceptación)
-- [3. Pruebas Automatizadas con Vitest, Jest, Cypress](#pruebas-automatizadas-con-vitest,-jest,-cypress)
+- [3. Pruebas Automatizadas con Vitest, Jest, Cypress](#pruebas-automatizadas-con-vitest-jest-cypress)
 - [4. Equipo de Calidad](#equipo-de-calidad)
 - [5. Estándares aplicados](#estándares-aplicados)
 - [6. Plan de riesgos](#plan-de-riesgos)
