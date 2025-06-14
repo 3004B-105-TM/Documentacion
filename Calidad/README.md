@@ -1033,12 +1033,19 @@ No logramos correctamente unir dentro de nuestro análisis con SonarQube el Cove
 
 CodeForces. (2024). CodeForces Problem Set. https://codeforces.com/problemset
 Go. (2024). The Go Programming Language. https://golang.org/
+
 International Organization for Standardization. (2011). Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) (ISO/IEC 25010:2011). https://www.iso.org/standard/35733.html
+
 International Organization for Standardization. (2015). Quality management systems — Requirements (ISO 9001:2015). https://www.iso.org/standard/62085.html
+
 International Organization for Standardization. (2017). Systems and software engineering — Software life cycle processes (ISO/IEC 12207:2017). https://www.iso.org/standard/63712.html
+
 International Organization for Standardization. (2022). Software and systems engineering — Software testing (ISO/IEC 29119:2022). https://www.iso.org/standard/79439.html
-Judge0. (2023). Judge0 API Documentation. https://judge0.com/
+
 PostgreSQL. (2024). PostgreSQL Documentation. https://www.postgresql.org/docs/
+
 React. (2024). React Documentation. https://react.dev/
+
 Software Engineering Institute. (2018). CMMI for Development, Version 2.0. Carnegie Mellon University. https://cmmiinstitute.com/cmmi
+
 SonarSource. (2024). SonarQube Documentation. https://docs.sonarqube.org/
