@@ -963,5 +963,21 @@ Durante el proyecto se fomentará una comunicación abierta para gestionar los r
 
 ## Reporte de uso SonarQube
 
+- Integrado como herramienta de análisis estático de código.
+- Se ejecutaron escaneos para:
+  - Detectar código duplicado.
+  - Promover el uso de buenas prácticas.
+  - Identificar posibles vulnerabilidades o malas implementaciones.
+- Se resolvieron advertencias relacionadas con la legibilidad, estructura y calidad general del código.
 
 
+Fotos de analísis de código con SonarQube:
+
+![Captura de pantalla 2025-06-13 190402](https://github.com/user-attachments/assets/8facb9b3-5c70-46fc-8da4-59bd8bcc2a59)
+
+![Captura de pantalla 2025-06-13 190237](https://github.com/user-attachments/assets/cf07c4c2-0eef-41cc-a9e7-73e7909c4195)
+
+
+Dificultades encontradas:
+
+No logramos correctamente unir dentro de nuestro análisis con SonarQube el Coverage de líneas que testeamos automáticamente, por lo cual no salía dentro de nuestro análisis presente. A pesar de esto, nuestro testeo manual y automatizado, evitar duplicación de código y buenas practicas aseguran una alta calidad en nuestro código entregado.
