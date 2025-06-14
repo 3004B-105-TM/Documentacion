@@ -179,7 +179,6 @@ El plan de pruebas cubre los siguientes aspectos:
 | PA-007 | Experiencia de usuario optimizada en móviles | Como usuario, quiero acceder a la plataforma desde mi dispositivo móvil para practicar en cualquier momento.                   | La interfaz debe ser responsiva y mantener todas sus funcionalidades en dispositivos móviles.                                      |
 | PA-008 | Tiempo de respuesta satisfactorio            | Como usuario, espero que la plataforma responda rápidamente a mis interacciones para no perder tiempo esperando.               | Todas las operaciones básicas deben completarse en menos de 3 segundos y las evaluaciones de código en menos de 15 segundos.       |
 
----
 
 Todas estas pruebas fueron validades de manera manual durante el desarrollo de nuestro código, y se presentaron avances a nuestros profesores para validar su uso. No son las pruebas que fueron automatizadas.
 
