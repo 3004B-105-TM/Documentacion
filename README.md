@@ -233,10 +233,15 @@ Se puede ver funcionales en video demo.
 
 ---
 
-- ✅ **Pruebas automatizadas:**
+- ✅ **Pruebas automatizadas :**
   - SonarQube:
   - ![Captura de pantalla 2025-06-10 084001](https://github.com/user-attachments/assets/d0bed7f6-9353-44d6-ae98-3919e46d8e7d)
-  
+ 
+  - ![image](https://github.com/user-attachments/assets/769e8b3d-f543-4943-9e0b-90e0f7b2c8bb)
+ 
+  - ![image](https://github.com/user-attachments/assets/604e36ce-30a0-43b6-853e-e27df5fbb458)
+
+
   - Cada integrante contribuyó con 10 pruebas usando:
     - `Vitest` para componentes
     - `Cypress` para integración
@@ -244,10 +249,11 @@ Se puede ver funcionales en video demo.
 - ✅ **End-to-End (Cypress):**
   - Login y envío de código correctamente validados.
 - ✅ **Evidencia de ejecución:**
-  - `TestRun #1` - Manuales (cobertura 30%)
   - `TestRun #2` - Automatizadas
 
-📁 Ver carpeta `/evidencias/` con capturas de ejecución.
+📁 Ver carpeta `/evidencias/` con capturas de ejecución, carpeta en front (tests- persona) tiene sus archivos-
+
+correr npx vitest en tm-front
 
 ---
 
