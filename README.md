@@ -263,6 +263,7 @@ correr npx vitest en tm-front
 ---
 
 Corrimos todo con el siguiente archivo bash:
+```bash
 #!/bin/bash
 
 # Function to print section headers
@@ -315,7 +316,7 @@ echo "Checking backend containers..."
 docker ps | grep code-execution-service
 echo "Checking frontend service..."
 systemctl status tm-front.service | grep "Active:"
-
+```
 
 Gracias a este ejecutable, pudimos facilmente verificar pruebas de ejecutadores en cada lenguaje, verificar que tanto front end y backend esten activos, y actualizar (despues de hacer git pull en cada repositorio).
 
