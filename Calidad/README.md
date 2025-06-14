@@ -156,7 +156,7 @@ Adicionalmente, las pruebas actuales no contemplan casos de uso con usuarios que
 | ------ | ------------------------------ | ---------------------------------------------------------------- | ------------------------------------------------------- |
 | PD-001 | Tiempo de respuesta del login  | Medir el tiempo que tarda el sistema en autenticar a un usuario. | La autenticación no debe tardar más de 3 segundos.      |
 | PD-002 | Carga del dashboard            | Evaluar el tiempo de carga del dashboard.                        | El dashboard debe cargarse en menos de 4 segundos.      |
-| PD-003 | Evaluación de código en Judge0 | Medir el tiempo de procesamiento del código en Judge0.           | La evaluación debe completarse en menos de 15 segundos. |
+| PD-003 | Evaluación de código en Docker | Medir el tiempo de procesamiento del código en Docker.           | La evaluación debe completarse en menos de 15 segundos. |
 
 ---
 
@@ -165,7 +165,7 @@ Adicionalmente, las pruebas actuales no contemplan casos de uso con usuarios que
 | ID     | Nombre                                  | Descripción                                                                 | Criterios de Éxito                                           |
 | ------ | --------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | PE-001 | Uso de plataforma con mucha información | Cargar el dashboard de problemas cuando hay más de 100 en la base de datos. | La plataforma debe mantener tiempos de respuesta aceptables. |
-| PE-002 | Envío masivo de código a Judge0         | Mandar varias solicitudes de evaluación en paralelo.                        | Judge0 debe seguir funcionando sin caídas abruptas.          |
+| PE-002 | Envío masivo de código a Docker         | Mandar varias solicitudes de evaluación en paralelo.                        | Docker debe seguir funcionando sin caídas abruptas.          |
 
 ---
 
@@ -185,7 +185,7 @@ Adicionalmente, las pruebas actuales no contemplan casos de uso con usuarios que
 | ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | PF-001 | Autenticación de usuario            | Validar que los usuarios puedan iniciar sesión correctamente.                                               | El usuario debe autenticarse con credenciales válidas y recibir un mensaje de error si los datos son incorrectos. |
 | PF-002 | Filtrado de problemas               | Comprobar que los filtros de dificultad y etiquetas funcionen correctamente.                                | La lista de problemas debe actualizarse dinámicamente al aplicar filtros y permitir eliminar filtros sin errores. |
-| PF-003 | Evaluación de código                | Verificar que el código enviado a Judge0 se procese adecuadamente.                                          | Los resultados deben ser precisos y mostrarse correctamente al usuario.                                           |
+| PF-003 | Evaluación de código                | Verificar que el código enviado a Backend se procese adecuadamente.                                          | Los resultados deben ser precisos y mostrarse correctamente al usuario.                                           |
 | PF-004 | Registro de nuevos usuarios         | Validar que el sistema permita la creación de nuevas cuentas.                                               | El usuario debe recibir un correo de confirmación tras registrarse y poder iniciar sesión posteriormente.         |
 | PF-005 | Envío de código                     | Comprobar que los usuarios puedan enviar sus soluciones de código correctamente.                            | La plataforma debe procesar y evaluar el código sin errores.                                                      |
 | PF-006 | Generación de reportes de actividad | Validar que el sistema genere reportes sobre la actividad del usuario.                                      | Los reportes deben incluir número de problemas resueltos, XP ganado y estadísticas relevantes.                    |
@@ -201,7 +201,7 @@ Adicionalmente, las pruebas actuales no contemplan casos de uso con usuarios que
 | PU-001 | Validación de datos de login         | Verificar que la función de validación de correo y contraseña funcione correctamente.                             | La función debe rechazar formatos de correo inválidos y contraseñas que no cumplan con los requisitos de seguridad. |
 | PU-002 | Verificación de filtros              | Comprobar que las funciones de filtrado de problemas devuelvan los resultados esperados.                          | Los filtros deben retornar exactamente los problemas que cumplen con los criterios seleccionados.                   |
 | PU-003 | Cálculo de recompensas               | Validar que el algoritmo de cálculo de XP y currency funcione según los parámetros establecidos.                  | Las recompensas deben calcularse correctamente según la dificultad del problema resuelto.                           |
-| PU-004 | Integración con Judge0               | Comprobar que la función de envío de código a Judge0 funcione adecuadamente.                                      | La función debe establecer conexión con Judge0, enviar el código y recibir respuesta sin errores.                   |
+| PU-004 | Integración con Backend               | Comprobar que la función de envío de código a Backend funcione adecuadamente.                                      | La función debe establecer conexión con Backend, enviar el código y recibir respuesta sin errores.                   |
 | PU-005 | Análisis de código con SonarQube     | Verificar que la integración con SonarQube evalúe correctamente los estándares de calidad del código.             | SonarQube debe detectar problemas de calidad en el código y generar reportes precisos.                              |
 | PU-006 | Actualización de progreso            | Validar que las funciones de actualización de estadísticas del usuario modifiquen correctamente la base de datos. | Los datos de progreso del usuario deben actualizarse de manera precisa en la base de datos.                         |
 | PU-007 | Función de ordenamiento de problemas | Comprobar que la función para ordenar problemas por dificultad, fecha o popularidad funcione correctamente.       | Los problemas deben ordenarse según el criterio seleccionado sin excepción.                                         |
@@ -916,7 +916,7 @@ Al momento de analizar los riesgos, usaremos las historias de usuario y exploram
 | RI-011 | Los problemas de programación no se refrescan correctamente, mostrando desafíos obsoletos o eliminados         |
 | RI-012 | Se elimina accidentalmente información en la base de datos                                                     |
 | RI-013 | Cierre forzado de la plataforma por problemas legales o de derechos de autor                                   |
-| RI-014 | Desincronización con Judge0, causando que el código enviado no se evalúe correctamente o tome demasiado tiempo |
+| RI-014 | Desincronización con Docker, causando que el código enviado no se evalúe correctamente o tome demasiado tiempo |
 | RI-015 | Ataque cibernético que tumbe el proyecto por completo                                                          |
 | RI-016 | Vulnerabilidades en dependencias de código                                                                     |
 
