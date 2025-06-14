@@ -904,7 +904,7 @@ Claro, aquí te dejo la última parte del diseño de casos de prueba, del **TC-0
    **Resultado esperado:** Se muestra mensaje de error del lenguaje correspondiente
 
 
-### ✅ **TC-047 – Mission muestra nombre y icono**
+### TC-047 – Mission muestra nombre y icono
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-007 – Dashboard de Avances
@@ -921,7 +921,7 @@ Claro, aquí te dejo la última parte del diseño de casos de prueba, del **TC-0
 
 ---
 
-### ✅ **TC-048 – Función calcula puntos correctamente**
+### TC-048 – Función calcula puntos correctamente
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-006 – Sistema de Recompensas
@@ -932,13 +932,13 @@ Claro, aquí te dejo la última parte del diseño de casos de prueba, del **TC-0
 1. Ejecutar función con cada dificultad
    **Resultado esperado:**
 
-* Dificultad 1 → 10 puntos
-* Dificultad 3 → 30 puntos
-* Dificultad 5 → 50 puntos
+* Dificultad 1 → 20 puntos
+* Dificultad 3 → 60 puntos
+* Dificultad 5 → 100 puntos
 
 ---
 
-### ✅ **TC-049 – Manejo correcto de estados true, false, null**
+### TC-049 – Manejo correcto de estados true, false, null
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-007 – Dashboard de Avances
@@ -956,7 +956,7 @@ Claro, aquí te dejo la última parte del diseño de casos de prueba, del **TC-0
 
 ---
 
-### ✅ **TC-050 – Generación correcta de estrellas para dificultad**
+### TC-050 – Generación correcta de estrellas para dificultad
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-004 – Asignación de Dificultad
@@ -974,7 +974,7 @@ Claro, aquí te dejo la última parte del diseño de casos de prueba, del **TC-0
 
 ---
 
-### ✅ **TC-051 – Formato correcto para puntos**
+### TC-051 – Formato correcto para puntos
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-007 – Dashboard de Avances
@@ -990,7 +990,7 @@ Claro, aquí te dejo la última parte del diseño de casos de prueba, del **TC-0
 
 ---
 
-### ✅ **TC-052 – Testeo general de componentes con mock**
+### TC-052 – Testeo general de componentes con mock
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-005 – Escribir y Ejecutar Código
@@ -1007,7 +1007,7 @@ Claro, aquí te dejo la última parte del diseño de casos de prueba, del **TC-0
 
 ---
 
-- ✅ **Pruebas automatizadas :**
+- ### **Pruebas automatizadas :**
 
 
   - Cada integrante contribuyó con 10 pruebas usando:
