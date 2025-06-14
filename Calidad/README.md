@@ -1,27 +1,45 @@
 # Calidad (M5)
 
 ## Índice
+
 - [1. Historias de Usuario con Caso de Uso](#historias-de-usuario:)
 - [2. Plan de pruebas](#2-plan-de-pruebas)
+- [2.1 Diseño de pruebas](#diseño-de-pruebas)
+- [2.2 Limitaciones en el alcance de las pruebas](#limitaciones-en-el-alcance-de-las-pruebas)
+- [2.3 Pruebas de desempeño](#pruebas-de-desempeño)
+- [2.4 Pruebas de estrés](#pruebas-de-estrés)
+- [2.5 Pruebas de carga](#pruebas-de-carga)
+- [2.6 Pruebas funcionales](#pruebas-funcionales)
+- [2.7 Pruebas unitarias](#pruebas-unitarias)
+- [2.8 Pruebas de aceptación](#pruebas-de-aceptación)
+- [3. Equipo de Calidad](#equipo-de-calidad)
+- [4. Estándares aplicados](#estándares-aplicados)
+- [5. Plan de riesgos](#plan-de-riesgos)
+- [6. Reporte de uso SonarQube](#reporte-de-uso-sonarqube)
+- [7. Referencias](#referencias)
 
-## Historias de Usuario: 
+## Historias de Usuario:
+
 Se puede ver funcionales en video demo.
 
 #### HU-001 - Login de Usuario
+
 **Descripción:** Como usuario y trabajador de la empresa, quiero poder ingresar a la plataforma.  
 **Criterios de Aceptación:**
+
 - Ingreso con correo y contraseña.
 - Permitir uso de cuenta Google para mayor velocidad.
 - Mensaje de error si son incorrectos o inválidos.
-  
+
 **Caso de uso**
 
-  ![image](https://github.com/user-attachments/assets/f4a9411d-d099-47b1-ad77-9a9666beb910)
----
+## ![image](https://github.com/user-attachments/assets/f4a9411d-d099-47b1-ad77-9a9666beb910)
 
 #### HU-002 - Resolver Problemas de Programación
+
 **Descripción:** Como usuario, quiero poder acceder a los problemas de programación para resolverlos.  
 **Criterios de Aceptación:**
+
 - Ingresar correctamente.
 - Acceder a sección “Problemas de programación”.
 - Seleccionar problema a resolver.
@@ -29,39 +47,45 @@ Se puede ver funcionales en video demo.
 
 **Caso de uso**
 
-  ![Captura de pantalla 2025-03-09 173425](https://github.com/user-attachments/assets/da73723c-a7cc-4c73-bedb-00d23e5a4d3a)
+![Captura de pantalla 2025-03-09 173425](https://github.com/user-attachments/assets/da73723c-a7cc-4c73-bedb-00d23e5a4d3a)
 
 ---
 
 #### HU-003 - Filtrar Problemas
+
 **Descripción:** Como usuario, quiero filtrar problemas por dificultad y etiquetas.  
 **Criterios de Aceptación:**
+
 - Opciones de filtro visibles.
 - Lista actualizada automáticamente.
 - Posibilidad de quitar filtros.
 
 **Caso de uso**
-  
-  ![Captura de pantalla 2025-06-11 205221](https://github.com/user-attachments/assets/20b44053-3ece-4ca5-b924-320a2e6e797a)
+
+![Captura de pantalla 2025-06-11 205221](https://github.com/user-attachments/assets/20b44053-3ece-4ca5-b924-320a2e6e797a)
 
 ---
 
 #### HU-004 - Ver Detalles del Problema
+
 **Descripción:** Como usuario, quiero ver la descripción completa del problema.  
 **Criterios de Aceptación:**
+
 - Página con descripción al hacer clic.
 - Mostrar dificultad, etiquetas y link original.
 - Botón para regresar.
 
 **Caso de uso**
 
- ![Captura de pantalla 2025-06-11 205221](https://github.com/user-attachments/assets/c8f5c5e1-9017-4677-8862-ef9dd28eddcd)
+![Captura de pantalla 2025-06-11 205221](https://github.com/user-attachments/assets/c8f5c5e1-9017-4677-8862-ef9dd28eddcd)
 
 ---
 
 #### HU-005 - Escribir y Ejecutar Código
+
 **Descripción:** Como usuario, quiero escribir y ejecutar mi código para comprobar si funciona.  
 **Criterios de Aceptación:**
+
 - Editor integrado.
 - Botón “Ejecutar” que envía a VM don de se crea contenedor en lenguaje.
 - Resultados mostrados en la interfaz.
@@ -73,8 +97,10 @@ Se puede ver funcionales en video demo.
 ---
 
 #### HU-006 - Sistema de Recompensas
-**Descripción:** Como usuario, quiero recibir XP y puntos  al resolver problemas.  
+
+**Descripción:** Como usuario, quiero recibir XP y puntos al resolver problemas.  
 **Criterios de Aceptación:**
+
 - Código válido actualiza puntos para tienda.
 - Notificación de éxito.
 - Actualización en perfil.
@@ -82,18 +108,20 @@ Se puede ver funcionales en video demo.
 
 **Caso de uso**
 
-  ![Captura de pantalla 2025-06-11 205101](https://github.com/user-attachments/assets/95ae88f8-8a4d-4436-aa45-ac6be848ebe0)
+![Captura de pantalla 2025-06-11 205101](https://github.com/user-attachments/assets/95ae88f8-8a4d-4436-aa45-ac6be848ebe0)
 
 ---
 
 #### HU-007 - Dashboard de Avances
+
 **Descripción:** Como usuario, quiero ver mi avance y el de mis compañeros.  
 **Criterios de Aceptación:**
+
 - Acceder a información de otros usuarios.
 
 **Caso de uso**
 
- ![Captura de pantalla 2025-06-11 204641](https://github.com/user-attachments/assets/2e38d060-f3b7-49a6-9cb5-3a7aff7059c8)
+![Captura de pantalla 2025-06-11 204641](https://github.com/user-attachments/assets/2e38d060-f3b7-49a6-9cb5-3a7aff7059c8)
 
 ---
 
@@ -102,6 +130,7 @@ Se puede ver funcionales en video demo.
 ### Diseño de pruebas
 
 El plan de pruebas cubre los siguientes aspectos:
+
 - Pruebas de desempeño: Se analizará la rapidez de respuesta del sistema.
 - Pruebas de estrés: Se evaluará la capacidad de la plataforma bajo condiciones extremas.
 - Pruebas de carga: Se medirá el rendimiento con múltiples usuarios simultáneos.
@@ -112,6 +141,7 @@ El plan de pruebas cubre los siguientes aspectos:
 ---
 
 ### Limitaciones en el alcance de las pruebas
+
 Debido a restricciones de tiempo y recursos, no se contempla la cobertura total de todas las áreas de prueba. Si bien reconocemos la importancia de validar el uso eficiente de recursos, realizar pruebas de carga con un número alto de usuarios concurrentes (por ejemplo, ~1000) podría sobrepasar la capacidad actual de nuestra máquina virtual y base de datos.
 
 No obstante, mitigamos este riesgo mediante técnicas de troubleshooting y monitoreo del consumo durante la ejecución del sistema, como la implementación de procesos en single drop, controlando explícitamente la asignación de recursos por instancia.
@@ -143,9 +173,9 @@ Adicionalmente, las pruebas actuales no contemplan casos de uso con usuarios que
 
 | ID     | Nombre                                    | Descripción                                                             | Criterios de Éxito                                              |
 | ------ | ----------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------- |
-| PL-001 | Simulación de 5 usuarios registrados     | Medir el desempeño de la página cuando hay varios usuarios registrados. | La plataforma debe mantener tiempos de respuesta aceptables.    |
+| PL-001 | Simulación de 5 usuarios registrados      | Medir el desempeño de la página cuando hay varios usuarios registrados. | La plataforma debe mantener tiempos de respuesta aceptables.    |
 | PL-002 | Peticiones simultáneas a la base de datos | Enviar consultas masivas a PostgreSQL.                                  | La base de datos no debe ralentizarse significativamente.       |
-| PL-003 | Simulación de 20 usuarios              | Enviar muchas solicitudes al servidor al mismo tiempo.                  | La plataforma no debe colapsar al enviar todas las solicitudes. |
+| PL-003 | Simulación de 20 usuarios                 | Enviar muchas solicitudes al servidor al mismo tiempo.                  | La plataforma no debe colapsar al enviar todas las solicitudes. |
 
 ---
 
@@ -192,28 +222,30 @@ Adicionalmente, las pruebas actuales no contemplan casos de uso con usuarios que
 | PA-007 | Experiencia de usuario optimizada en móviles | Como usuario, quiero acceder a la plataforma desde mi dispositivo móvil para practicar en cualquier momento.                   | La interfaz debe ser responsiva y mantener todas sus funcionalidades en dispositivos móviles.                                      |
 | PA-008 | Tiempo de respuesta satisfactorio            | Como usuario, espero que la plataforma responda rápidamente a mis interacciones para no perder tiempo esperando.               | Todas las operaciones básicas deben completarse en menos de 3 segundos y las evaluaciones de código en menos de 15 segundos.       |
 
-
 Todas estas pruebas fueron validades de manera manual durante el desarrollo de nuestro código, y se presentaron avances a nuestros profesores para validar su uso. No son las pruebas que fueron automatizadas.
 
 ---
 
 ## Equipo de Calidad
+
 Roles de cada miembro del equipo:
+
 - Fernando Morán Fougerat: Validación de pruebas de estrés y unitarias.
 - Imanol Armando González Solís: Validación de pruebas de carga.
 - Rogelio Garza Rendón: Validación de pruebas funcionales
 - Ramiro Alejandro Garza Villarreal: Validación de pruebas de aceptación y unitarias.
+- Diego Dávila: Validación general.
 
+## Estándares aplicados
 
-## Estándares aplicados 
 Para este proyecto, estaremos siguiendo diferentes estándares para poder garantizar la calidad del software, usaremos los siguientes estándares:
+
 - **ISO/IEC 25010** - Modelo de calidad del software que define características como funcionalidad, confiabilidad, usabilidad, eficiencia, mantenibilidad y portabilidad.
 - **ISO/IEC 12207** - Estándar que establece procesos para el desarrollo y mantenimiento de software.
 - **ISO/IEC 29119** - Establece procesos para el diseño, ejecución y documentación de pruebas.
-- **ISO/IEC 9001** - Certifica que los procesos cumplen estándares de calidad internacionales. 
-También estaremos incorporando niveles de modelos de gestión como por ejemplo:
+- **ISO/IEC 9001** - Certifica que los procesos cumplen estándares de calidad internacionales.
+  También estaremos incorporando niveles de modelos de gestión como por ejemplo:
 - **CMMI - Nivel 3** - Los procesos estarán definidos y documentados durante todas las etapas del desarrollo, mejoras continuas mediante métricas de calidad y desempeño y usaremos práctica de gestión de riesgos y medición de calidad en el ciclo de vida del software.
-
 
 ### TC-001 – Redirección tras login exitoso
 
@@ -754,7 +786,6 @@ También estaremos incorporando niveles de modelos de gestión como por ejemplo:
 2. Ejecutar
    **Resultado esperado:** Se muestra mensaje de error del lenguaje correspondiente
 
-
 ### TC-047 – Mission muestra nombre y icono
 
 **Fecha:** 13/06/2025
@@ -767,8 +798,8 @@ También estaremos incorporando niveles de modelos de gestión como por ejemplo:
 2. Observar nombre e ícono
    **Resultado esperado:**
 
-* El nombre `"Primer Desafío"` se visualiza
-* El ícono de trofeo se renderiza correctamente
+- El nombre `"Primer Desafío"` se visualiza
+- El ícono de trofeo se renderiza correctamente
 
 ---
 
@@ -783,9 +814,9 @@ También estaremos incorporando niveles de modelos de gestión como por ejemplo:
 1. Ejecutar función con cada dificultad
    **Resultado esperado:**
 
-* Dificultad 1 → 20 puntos
-* Dificultad 3 → 60 puntos
-* Dificultad 5 → 100 puntos
+- Dificultad 1 → 20 puntos
+- Dificultad 3 → 60 puntos
+- Dificultad 5 → 100 puntos
 
 ---
 
@@ -801,9 +832,9 @@ También estaremos incorporando niveles de modelos de gestión como por ejemplo:
 2. Validar visualmente o con clase CSS el estado aplicado
    **Resultado esperado:**
 
-* `true` → Aparece como resuelto
-* `false` → No resuelto
-* `null` → No intentado
+- `true` → Aparece como resuelto
+- `false` → No resuelto
+- `null` → No intentado
 
 ---
 
@@ -819,9 +850,9 @@ También estaremos incorporando niveles de modelos de gestión como por ejemplo:
 2. Contar estrellas
    **Resultado esperado:**
 
-* Dificultad 1 → 1 estrella
-* Dificultad 3 → 3 estrellas
-* Dificultad 5 → 5 estrellas
+- Dificultad 1 → 1 estrella
+- Dificultad 3 → 3 estrellas
+- Dificultad 5 → 5 estrellas
 
 ---
 
@@ -836,8 +867,8 @@ También estaremos incorporando niveles de modelos de gestión como por ejemplo:
 1. Renderizar componente de puntuación
    **Resultado esperado:**
 
-* Puntos 10 → `"10 MC"`
-* Puntos 35 → `"35 MC"`
+- Puntos 10 → `"10 MC"`
+- Puntos 35 → `"35 MC"`
 
 ---
 
@@ -852,9 +883,9 @@ También estaremos incorporando niveles de modelos de gestión como por ejemplo:
 2. Renderizar componente principal (`ChallengeCard`, `Mission`, etc.)
    **Resultado esperado:**
 
-* Componentes renderizados correctamente
-* No se lanzan errores de importación
-* Mocks se aplican correctamente
+- Componentes renderizados correctamente
+- No se lanzan errores de importación
+- Mocks se aplican correctamente
 
 ---
 
@@ -862,7 +893,7 @@ También estaremos incorporando niveles de modelos de gestión como por ejemplo:
 
 ### 1. Introducción
 
-La gestión de riesgos es esencial para el éxito de cualquier proyecto de desarrollo de software. Un plan de riesgos bien estructurado nos permite anticipar y mitigar posibles problemas. A continuación, presentamos un plan de riesgos adaptado a un proyecto de desarrollo de software.
+La gestión de riesgos es esencial para el éxito de cualquier proyecto de desarrollo de software. Un plan de riesgos bien estructurado nos permite anticipar y mitigar posibles problemas.
 
 ---
 
@@ -870,24 +901,24 @@ La gestión de riesgos es esencial para el éxito de cualquier proyecto de desar
 
 Al momento de analizar los riesgos, usaremos las historias de usuario y exploramos posibles riesgos en cada etapa de desarrollo. Tomaremos en cuenta factores técnicos, como la estabilidad o la compatibilidad de tecnologías, así como los sistemas operativos, la disponibilidad de servicios externos y la integridad de los datos. Estaremos tomando en cuenta el impacto en la experiencia de usuario, asegurando que la plataforma sea accesible y funcional. A través de lluvia de ideas, revisión continua y búsqueda exhaustiva, identificaremos posibles riesgos, y definiremos estrategias para mitigarlos antes de que tengan un impacto en el proyecto.
 
-| Clave   | Descripción                                                                                         |
-|---------|---------------------------------------------------------------------------------------------------|
-| RI-001  | El LLM que utilizamos se equivoca al modificar un problema                                        |
-| RI-002  | Alguna dependencia no es compatible con las demás tecnologías que utilizamos                       |
-| RI-003  | Inventario de la tienda inexacto                                                                  |
-| RI-004  | Los usuarios no se sienten cómodos con la dificultad de los problemas                              |
-| RI-005  | Sobrecarga de la plataforma por falta de recursos para mejorar el servidor                         |
-| RI-006  | Algún servicio externo se cae durante la presentación al socio                                     |
-| RI-007  | Error de precisión en alguna de las tags de un problema                                           |
-| RI-008  | Cantidad de dinero digital inexacto                                                               |
-| RI-009  | Se presenta algún bug en la tienda que impida a los usuarios redimir sus recompensas              |
-| RI-010  | Corrupción de la base de datos debido a un error en el sistema de respaldo, afectando a todos los usuarios |
-| RI-011  | Los problemas de programación no se refrescan correctamente, mostrando desafíos obsoletos o eliminados |
-| RI-012  | Se elimina accidentalmente información en la base de datos                                        |
-| RI-013  | Cierre forzado de la plataforma por problemas legales o de derechos de autor                      |
-| RI-014  | Desincronización con Judge0, causando que el código enviado no se evalúe correctamente o tome demasiado tiempo |
-| RI-015  | Ataque cibernético que tumbe el proyecto por completo                                             |
-| RI-016  | Vulnerabilidades en dependencias de código                                                        |
+| Clave  | Descripción                                                                                                    |
+| ------ | -------------------------------------------------------------------------------------------------------------- |
+| RI-001 | El LLM que utilizamos se equivoca al modificar un problema                                                     |
+| RI-002 | Alguna dependencia no es compatible con las demás tecnologías que utilizamos                                   |
+| RI-003 | Inventario de la tienda inexacto                                                                               |
+| RI-004 | Los usuarios no se sienten cómodos con la dificultad de los problemas                                          |
+| RI-005 | Sobrecarga de la plataforma por falta de recursos para mejorar el servidor                                     |
+| RI-006 | Algún servicio externo se cae durante la presentación al socio                                                 |
+| RI-007 | Error de precisión en alguna de las tags de un problema                                                        |
+| RI-008 | Cantidad de dinero digital inexacto                                                                            |
+| RI-009 | Se presenta algún bug en la tienda que impida a los usuarios redimir sus recompensas                           |
+| RI-010 | Corrupción de la base de datos debido a un error en el sistema de respaldo, afectando a todos los usuarios     |
+| RI-011 | Los problemas de programación no se refrescan correctamente, mostrando desafíos obsoletos o eliminados         |
+| RI-012 | Se elimina accidentalmente información en la base de datos                                                     |
+| RI-013 | Cierre forzado de la plataforma por problemas legales o de derechos de autor                                   |
+| RI-014 | Desincronización con Judge0, causando que el código enviado no se evalúe correctamente o tome demasiado tiempo |
+| RI-015 | Ataque cibernético que tumbe el proyecto por completo                                                          |
+| RI-016 | Vulnerabilidades en dependencias de código                                                                     |
 
 ---
 
@@ -895,24 +926,24 @@ Al momento de analizar los riesgos, usaremos las historias de usuario y exploram
 
 #### Análisis de riesgos
 
-| Clave  | Probabilidad             | Impacto        | Prioridad |
-|--------|-------------------------|----------------|-----------|
-| RI-001 | Muy Probable (5)        | Insignificante (1) | 5         |
-| RI-002 | Muy Probable (5)        | Moderada (3)   | 15        |
-| RI-003 | Probable (4)            | Menor (2)      | 8         |
-| RI-004 | Probable (4)            | Moderada (3)   | 12        |
-| RI-005 | Probable (4)            | Importante (4) | 16        |
-| RI-006 | Probable (4)            | Catastrófica (5) | 20        |
-| RI-007 | Posible (3)             | Insignificante (1) | 3         |
-| RI-008 | Posible (3)             | Moderada (3)   | 9         |
-| RI-009 | Posible (3)             | Importante (4) | 12        |
-| RI-010 | Posible (3)             | Catastrófica (5) | 15        |
-| RI-011 | No es probable (2)      | Moderada (3)   | 6         |
-| RI-012 | No es probable (2)      | Importante (4) | 8         |
-| RI-013 | No es probable (2)      | Catastrófica (5) | 10        |
-| RI-014 | Muy improbable (1)      | Importante (4) | 4         |
-| RI-015 | Muy improbable (1)      | Catastrófica (5) | 5         |
-| RI-016 | Posible (2)             | Menor (3)      | 6         |
+| Clave  | Probabilidad       | Impacto            | Prioridad |
+| ------ | ------------------ | ------------------ | --------- |
+| RI-001 | Muy Probable (5)   | Insignificante (1) | 5         |
+| RI-002 | Muy Probable (5)   | Moderada (3)       | 15        |
+| RI-003 | Probable (4)       | Menor (2)          | 8         |
+| RI-004 | Probable (4)       | Moderada (3)       | 12        |
+| RI-005 | Probable (4)       | Importante (4)     | 16        |
+| RI-006 | Probable (4)       | Catastrófica (5)   | 20        |
+| RI-007 | Posible (3)        | Insignificante (1) | 3         |
+| RI-008 | Posible (3)        | Moderada (3)       | 9         |
+| RI-009 | Posible (3)        | Importante (4)     | 12        |
+| RI-010 | Posible (3)        | Catastrófica (5)   | 15        |
+| RI-011 | No es probable (2) | Moderada (3)       | 6         |
+| RI-012 | No es probable (2) | Importante (4)     | 8         |
+| RI-013 | No es probable (2) | Catastrófica (5)   | 10        |
+| RI-014 | Muy improbable (1) | Importante (4)     | 4         |
+| RI-015 | Muy improbable (1) | Catastrófica (5)   | 5         |
+| RI-016 | Posible (2)        | Menor (3)          | 6         |
 
 #### Clasificación de riesgos por nivel
 
@@ -925,42 +956,41 @@ Al momento de analizar los riesgos, usaremos las historias de usuario y exploram
 - **Riesgo Alto (Rojo):**  
   RI-002, RI-005, RI-006, RI-010
 
-
 ![image](https://github.com/user-attachments/assets/f57f990c-9ac5-4306-b105-56bf85c2a965)
 
 ---
 
 ### 4. Planificación de Estrategias de Mitigación
 
-| Riesgo                         | Estrategias de mitigación                                                                                      |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------|
-| **RI-001** El LLM se equivoca al modificar un problema | - Limitar el alcance de la LLM a tareas específicas (solo redacción).<br>- Revisión manual periódica.           |
-| **RI-002** Dependencia incompatible                | - Pruebas de integración antes de implementar.<br>- Plan de contingencia para reemplazo.                       |
-| **RI-003** Inventario inexacto                       | - Revisiones rutinarias.<br>- Sistema de colas para actualizaciones concurrentes.                              |
-| **RI-004** Usuarios incómodos con dificultad        | - Filtrado por dificultad.<br>- Feedback continuo para ajustes.                                              |
-| **RI-005** Sobrecarga por recursos insuficientes    | - Optimización de código y consultas.<br>- Pruebas de estrés periódicas.                                      |
-| **RI-006** Caída de servicio externo                 | - Respaldo audiovisual (capturas, videos) para presentaciones.                                               |
-| **RI-007** Error en tags de problema                  | - Permitir reportes de usuarios.<br>- Revisiones manuales periódicas.                                        |
-| **RI-008** Dinero digital inexacto                    | - Sistema de respaldo para restaurar saldos.                                                                  |
-| **RI-009** Bug que impida redención en tienda         | - Soporte preparado para resolver rápido.<br>- Ofrecer recompensas a usuarios afectados.                      |
-| **RI-010** Corrupción base de datos                   | - Respaldos regulares.<br>- Monitoreo continuo.                                                               |
-| **RI-011** Problemas no se refrescan correctamente    | - Caché con invalidación automática.<br>- Reportes de usuarios para problemas obsoletos.                      |
-| **RI-012** Eliminación accidental en base de datos    | - Respaldos.<br>- Sistema de papelera de reciclaje.                                                           |
-| **RI-013** Cierre por problemas legales               | - Equipo legal y cumplimiento normativo.<br>- Contenidos originales o con licencias.                          |
-| **RI-014** Desincronización con Judge0                | - Servicio alternativo de evaluación.<br>- Reintentos automáticos.                                            |
-| **RI-015** Ataque cibernético                           | - Medidas de seguridad robustas (encriptación, 2FA).<br>- Plan de respuesta a incidentes.                     |
-| **RI-016** Vulnerabilidades en dependencias            | - Uso de dependencias confiables y actualizadas.<br>- Uso de lock files para versiones específicas.           |
+| Riesgo                                                 | Estrategias de mitigación                                                                             |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| **RI-001** El LLM se equivoca al modificar un problema | - Limitar el alcance de la LLM a tareas específicas (solo redacción).<br>- Revisión manual periódica. |
+| **RI-002** Dependencia incompatible                    | - Pruebas de integración antes de implementar.<br>- Plan de contingencia para reemplazo.              |
+| **RI-003** Inventario inexacto                         | - Revisiones rutinarias.<br>- Sistema de colas para actualizaciones concurrentes.                     |
+| **RI-004** Usuarios incómodos con dificultad           | - Filtrado por dificultad.<br>- Feedback continuo para ajustes.                                       |
+| **RI-005** Sobrecarga por recursos insuficientes       | - Optimización de código y consultas.<br>- Pruebas de estrés periódicas.                              |
+| **RI-006** Caída de servicio externo                   | - Respaldo audiovisual (capturas, videos) para presentaciones.                                        |
+| **RI-007** Error en tags de problema                   | - Permitir reportes de usuarios.<br>- Revisiones manuales periódicas.                                 |
+| **RI-008** Dinero digital inexacto                     | - Sistema de respaldo para restaurar saldos.                                                          |
+| **RI-009** Bug que impida redención en tienda          | - Soporte preparado para resolver rápido.<br>- Ofrecer recompensas a usuarios afectados.              |
+| **RI-010** Corrupción base de datos                    | - Respaldos regulares.<br>- Monitoreo continuo.                                                       |
+| **RI-011** Problemas no se refrescan correctamente     | - Caché con invalidación automática.<br>- Reportes de usuarios para problemas obsoletos.              |
+| **RI-012** Eliminación accidental en base de datos     | - Respaldos.<br>- Sistema de papelera de reciclaje.                                                   |
+| **RI-013** Cierre por problemas legales                | - Equipo legal y cumplimiento normativo.<br>- Contenidos originales o con licencias.                  |
+| **RI-014** Desincronización con Judge0                 | - Servicio alternativo de evaluación.<br>- Reintentos automáticos.                                    |
+| **RI-015** Ataque cibernético                          | - Medidas de seguridad robustas (encriptación, 2FA).<br>- Plan de respuesta a incidentes.             |
+| **RI-016** Vulnerabilidades en dependencias            | - Uso de dependencias confiables y actualizadas.<br>- Uso de lock files para versiones específicas.   |
 
 ---
 
 ### 5. Establecimiento de Medidas de Control
 
-- **Seguimiento continuo:** Monitoreo periódico de sistemas y procesos clave durante 2 meses para detectar señales tempranas.  
-- **Registro y revisión de logs y auditorías:** Auditorías de seguridad y análisis para detectar anomalías.  
-- **Pruebas regulares:** Estrés, integración y pruebas unitarias para evaluar estabilidad.  
-- **Mantenimiento de dependencias:** Revisión y actualización constante para minimizar vulnerabilidades.  
-- **Evaluación de rendimiento:** Análisis de carga para prevenir problemas de escalabilidad.  
-- **Estrategia de mitigación de incidentes:** Planes de acción para responder rápidamente ante incidentes.  
+- **Seguimiento continuo:** Monitoreo periódico de sistemas y procesos clave durante 2 meses para detectar señales tempranas.
+- **Registro y revisión de logs y auditorías:** Auditorías de seguridad y análisis para detectar anomalías.
+- **Pruebas regulares:** Estrés, integración y pruebas unitarias para evaluar estabilidad.
+- **Mantenimiento de dependencias:** Revisión y actualización constante para minimizar vulnerabilidades.
+- **Evaluación de rendimiento:** Análisis de carga para prevenir problemas de escalabilidad.
+- **Estrategia de mitigación de incidentes:** Planes de acción para responder rápidamente ante incidentes.
 
 ---
 
@@ -968,9 +998,9 @@ Al momento de analizar los riesgos, usaremos las historias de usuario y exploram
 
 Durante el proyecto se fomentará una comunicación abierta para gestionar los riesgos de manera efectiva:
 
-- **Comunicación con socio formador:** Reportes regulares y discusión de riesgos y soluciones.  
-- **Documentación:** Registro detallado de riesgos, mitigaciones y respuestas.  
-- **Feedback:** Retroalimentación continua del equipo para mejorar gestión de riesgos.  
+- **Comunicación con socio formador:** Reportes regulares y discusión de riesgos y soluciones.
+- **Documentación:** Registro detallado de riesgos, mitigaciones y respuestas.
+- **Feedback:** Retroalimentación continua del equipo para mejorar gestión de riesgos.
 
 ---
 
@@ -983,19 +1013,18 @@ Durante el proyecto se fomentará una comunicación abierta para gestionar los r
   - Identificar posibles vulnerabilidades o malas implementaciones.
 - Se resolvieron advertencias relacionadas con la legibilidad, estructura y calidad general del código.
 
-
 Fotos de analísis de código con SonarQube:
 
 ![Captura de pantalla 2025-06-13 190402](https://github.com/user-attachments/assets/8facb9b3-5c70-46fc-8da4-59bd8bcc2a59)
 
 ![Captura de pantalla 2025-06-13 190237](https://github.com/user-attachments/assets/cf07c4c2-0eef-41cc-a9e7-73e7909c4195)
 
-
 **Dificultades encontradas:**
 
 No logramos correctamente unir dentro de nuestro análisis con SonarQube el Coverage de líneas que testeamos automáticamente, por lo cual no salía dentro de nuestro análisis presente. A pesar de esto, nuestro testeo manual y automatizado, evitar duplicación de código y buenas practicas aseguran una alta calidad en nuestro código entregado.
 
 ## Referencias
+
 CodeForces. (2024). CodeForces Problem Set. https://codeforces.com/problemset
 Go. (2024). The Go Programming Language. https://golang.org/
 International Organization for Standardization. (2011). Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) (ISO/IEC 25010:2011). https://www.iso.org/standard/35733.html
@@ -1007,4 +1036,3 @@ PostgreSQL. (2024). PostgreSQL Documentation. https://www.postgresql.org/docs/
 React. (2024). React Documentation. https://react.dev/
 Software Engineering Institute. (2018). CMMI for Development, Version 2.0. Carnegie Mellon University. https://cmmiinstitute.com/cmmi
 SonarSource. (2024). SonarQube Documentation. https://docs.sonarqube.org/
-
