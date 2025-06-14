@@ -1,4 +1,5 @@
 # 4. Calidad (M5)
+
 ## Historias de Usuario: 
 Se puede ver funcionales en video demo.
 
@@ -94,6 +95,112 @@ Se puede ver funcionales en video demo.
 ---
 
 ## Plan de pruebas
+
+El plan de pruebas cubre los siguientes aspectos:
+- Pruebas de desempeño: Se analizará la rapidez de respuesta del sistema.
+- Pruebas de estrés: Se evaluará la capacidad de la plataforma bajo condiciones extremas.
+- Pruebas de carga: Se medirá el rendimiento con múltiples usuarios simultáneos.
+- Pruebas funcionales: Se validará el correcto funcionamiento de cada componente.
+- Pruebas unitarias: Se probarán funciones individuales del sistema, sobretodo desde el lado del módulo de datos.
+- Pruebas de aceptación: Se comprobará que la plataforma cumpla con los requisitos del usuario final.
+
+
+---
+
+### Pruebas de desempeño
+
+| ID     | Nombre                         | Descripción                                                      | Criterios de Éxito                                      |
+| ------ | ------------------------------ | ---------------------------------------------------------------- | ------------------------------------------------------- |
+| PD-001 | Tiempo de respuesta del login  | Medir el tiempo que tarda el sistema en autenticar a un usuario. | La autenticación no debe tardar más de 3 segundos.      |
+| PD-002 | Carga del dashboard            | Evaluar el tiempo de carga del dashboard.                        | El dashboard debe cargarse en menos de 4 segundos.      |
+| PD-003 | Evaluación de código en Judge0 | Medir el tiempo de procesamiento del código en Judge0.           | La evaluación debe completarse en menos de 15 segundos. |
+
+---
+
+### Pruebas de estrés
+
+| ID     | Nombre                                  | Descripción                                                                 | Criterios de Éxito                                           |
+| ------ | --------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| PE-001 | Uso de plataforma con mucha información | Cargar el dashboard de problemas cuando hay más de 100 en la base de datos. | La plataforma debe mantener tiempos de respuesta aceptables. |
+| PE-002 | Envío masivo de código a Judge0         | Mandar varias solicitudes de evaluación en paralelo.                        | Judge0 debe seguir funcionando sin caídas abruptas.          |
+
+---
+
+### Pruebas de carga
+
+| ID     | Nombre                                    | Descripción                                                             | Criterios de Éxito                                              |
+| ------ | ----------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------- |
+| PL-001 | Simulación de 5 usuarios registrados     | Medir el desempeño de la página cuando hay varios usuarios registrados. | La plataforma debe mantener tiempos de respuesta aceptables.    |
+| PL-002 | Peticiones simultáneas a la base de datos | Enviar consultas masivas a PostgreSQL.                                  | La base de datos no debe ralentizarse significativamente.       |
+| PL-003 | Simulación de 20 usuarios              | Enviar muchas solicitudes al servidor al mismo tiempo.                  | La plataforma no debe colapsar al enviar todas las solicitudes. |
+
+---
+
+### Pruebas Funcionales
+
+| ID     | Nombre                              | Descripción                                                                                                 | Criterios de Éxito                                                                                                |
+| ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| PF-001 | Autenticación de usuario            | Validar que los usuarios puedan iniciar sesión correctamente.                                               | El usuario debe autenticarse con credenciales válidas y recibir un mensaje de error si los datos son incorrectos. |
+| PF-002 | Filtrado de problemas               | Comprobar que los filtros de dificultad y etiquetas funcionen correctamente.                                | La lista de problemas debe actualizarse dinámicamente al aplicar filtros y permitir eliminar filtros sin errores. |
+| PF-003 | Evaluación de código                | Verificar que el código enviado a Judge0 se procese adecuadamente.                                          | Los resultados deben ser precisos y mostrarse correctamente al usuario.                                           |
+| PF-004 | Registro de nuevos usuarios         | Validar que el sistema permita la creación de nuevas cuentas.                                               | El usuario debe recibir un correo de confirmación tras registrarse y poder iniciar sesión posteriormente.         |
+| PF-005 | Envío de código                     | Comprobar que los usuarios puedan enviar sus soluciones de código correctamente.                            | La plataforma debe procesar y evaluar el código sin errores.                                                      |
+| PF-006 | Generación de reportes de actividad | Validar que el sistema genere reportes sobre la actividad del usuario.                                      | Los reportes deben incluir número de problemas resueltos, XP ganado y estadísticas relevantes.                    |
+| PF-007 | Historial de intentos               | Evaluar que los usuarios puedan consultar sus envíos anteriores de código.                                  | Los intentos deben mostrarse en orden cronológico con detalles del resultado de cada uno.                         |
+| PF-008 | Respuesta a errores de ejecución    | Comprobar que el sistema muestre mensajes adecuados cuando el código presenta errores de sintaxis o lógica. | Los mensajes deben ser claros y ayudar al usuario a corregir el problema.                                         |
+
+---
+
+### Pruebas Unitarias
+
+| ID     | Nombre                               | Descripción                                                                                                       | Criterios de Éxito                                                                                                  |
+| ------ | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| PU-001 | Validación de datos de login         | Verificar que la función de validación de correo y contraseña funcione correctamente.                             | La función debe rechazar formatos de correo inválidos y contraseñas que no cumplan con los requisitos de seguridad. |
+| PU-002 | Verificación de filtros              | Comprobar que las funciones de filtrado de problemas devuelvan los resultados esperados.                          | Los filtros deben retornar exactamente los problemas que cumplen con los criterios seleccionados.                   |
+| PU-003 | Cálculo de recompensas               | Validar que el algoritmo de cálculo de XP y currency funcione según los parámetros establecidos.                  | Las recompensas deben calcularse correctamente según la dificultad del problema resuelto.                           |
+| PU-004 | Integración con Judge0               | Comprobar que la función de envío de código a Judge0 funcione adecuadamente.                                      | La función debe establecer conexión con Judge0, enviar el código y recibir respuesta sin errores.                   |
+| PU-005 | Análisis de código con SonarQube     | Verificar que la integración con SonarQube evalúe correctamente los estándares de calidad del código.             | SonarQube debe detectar problemas de calidad en el código y generar reportes precisos.                              |
+| PU-006 | Actualización de progreso            | Validar que las funciones de actualización de estadísticas del usuario modifiquen correctamente la base de datos. | Los datos de progreso del usuario deben actualizarse de manera precisa en la base de datos.                         |
+| PU-007 | Función de ordenamiento de problemas | Comprobar que la función para ordenar problemas por dificultad, fecha o popularidad funcione correctamente.       | Los problemas deben ordenarse según el criterio seleccionado sin excepción.                                         |
+| PU-008 | Función de búsqueda                  | Verificar que la búsqueda de problemas por palabra clave funcione adecuadamente.                                  | La función debe retornar todos los problemas que contengan la palabra clave en su título o descripción.             |
+
+---
+
+### Pruebas de Aceptación
+
+| ID     | Nombre                                       | Descripción                                                                                                                    | Criterios de Éxito                                                                                                                 |
+| ------ | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| PA-001 | Registro con Google                          | Como usuario nuevo, quiero poder registrarme usando mi cuenta de Google para acceder rápidamente a la plataforma.              | El usuario puede registrarse con un solo clic utilizando su cuenta corporativa de Google y acceder inmediatamente a la plataforma. |
+| PA-002 | Navegación intuitiva de problemas            | Como usuario, quiero navegar fácilmente por la lista de problemas disponibles para encontrar lo que necesito.                  | Los usuarios pueden filtrar, ordenar y buscar problemas sin dificultad y encuentran la información relevante en menos de 3 clics.  |
+| PA-003 | Editor de código funcional                   | Como usuario, quiero un editor de código con resaltado de sintaxis y autocompletado para facilitar la escritura de soluciones. | El editor debe soportar múltiples lenguajes, tener resaltado de sintaxis y ofrecer sugerencias de autocompletado.                  |
+| PA-004 | Retroalimentación clara sobre soluciones     | Como usuario, quiero recibir feedback detallado sobre mi código para entender por qué funciona o falla.                        | El sistema debe mostrar mensajes claros sobre errores de sintaxis, fallos en casos de prueba y sugerencias de mejora.              |
+| PA-005 | Visualización de progreso                    | Como usuario, quiero ver mi progreso y compararlo con otros miembros del equipo para mantener la motivación.                   | El dashboard debe mostrar claramente estadísticas personales y comparativas con otros usuarios.                                    |
+| PA-006 | Sistema de recompensas atractivo             | Como usuario, quiero recibir recompensas por resolver problemas para mantener mi interés en la plataforma.                     | Los usuarios deben recibir notificaciones visibles sobre las recompensas obtenidas y ver su acumulación en el perfil.              |
+| PA-007 | Experiencia de usuario optimizada en móviles | Como usuario, quiero acceder a la plataforma desde mi dispositivo móvil para practicar en cualquier momento.                   | La interfaz debe ser responsiva y mantener todas sus funcionalidades en dispositivos móviles.                                      |
+| PA-008 | Tiempo de respuesta satisfactorio            | Como usuario, espero que la plataforma responda rápidamente a mis interacciones para no perder tiempo esperando.               | Todas las operaciones básicas deben completarse en menos de 3 segundos y las evaluaciones de código en menos de 15 segundos.       |
+
+---
+
+Todas estas pruebas fueron validades de manera manual durante el desarrollo de nuestro código, y se presentaron avances a nuestros profesores para validar su uso. No son las pruebas que fueron automatizadas.
+
+
+### Equipo de Calidad
+Roles de cada miembro del equipo:
+- Fernando Morán Fougerat: Validación de pruebas de estrés y unitarias.
+- Imanol Armando González Solís: Validación de pruebas de carga.
+- Rogelio Garza Rendón: Validación de pruebas funcionales
+- Ramiro Alejandro Garza Villarreal: Validación de pruebas de aceptación y unitarias.
+
+
+### Estándares aplicados 
+Para este proyecto, estaremos siguiendo diferentes estándares para poder garantizar la calidad del software, usaremos los siguientes estándares:
+- **ISO/IEC 25010** - Modelo de calidad del software que define características como funcionalidad, confiabilidad, usabilidad, eficiencia, mantenibilidad y portabilidad.
+- **ISO/IEC 12207** - Estándar que establece procesos para el desarrollo y mantenimiento de software.
+- **ISO/IEC 29119** - Establece procesos para el diseño, ejecución y documentación de pruebas.
+- **ISO/IEC 9001** - Certifica que los procesos cumplen estándares de calidad internacionales. 
+También estaremos incorporando niveles de modelos de gestión como por ejemplo:
+- **CMMI - Nivel 3** - Los procesos estarán definidos y documentados durante todas las etapas del desarrollo, mejoras continuas mediante métricas de calidad y desempeño y usaremos práctica de gestión de riesgos y medición de calidad en el ciclo de vida del software.
+
 
 ### TC-001 – Redirección tras login exitoso
 
@@ -517,9 +624,6 @@ Se puede ver funcionales en video demo.
    **Resultado esperado:** Contenido visible correctamente
 
 ---
-Claro, aquí te dejo la última parte del diseño de casos de prueba, del **TC-037 al TC-052**, todos alineados con las **historias de usuario reales HU-001 a HU-007** cuando corresponde. Los que no tienen historia asociada se marcan como "Sin historia de usuario relacionada".
-
----
 
 ### TC-037 – Verificación de texto en card
 
@@ -740,3 +844,128 @@ Claro, aquí te dejo la última parte del diseño de casos de prueba, del **TC-0
 * Mocks se aplican correctamente
 
 ---
+
+## Plan de riesgos
+
+### 1. Introducción
+
+La gestión de riesgos es esencial para el éxito de cualquier proyecto de desarrollo de software. Un plan de riesgos bien estructurado nos permite anticipar y mitigar posibles problemas. A continuación, presentamos un plan de riesgos adaptado a un proyecto de desarrollo de software.
+
+---
+
+### 2. Identificación de Riesgos
+
+Al momento de analizar los riesgos, usaremos las historias de usuario y exploramos posibles riesgos en cada etapa de desarrollo. Tomaremos en cuenta factores técnicos, como la estabilidad o la compatibilidad de tecnologías, así como los sistemas operativos, la disponibilidad de servicios externos y la integridad de los datos. Estaremos tomando en cuenta el impacto en la experiencia de usuario, asegurando que la plataforma sea accesible y funcional. A través de lluvia de ideas, revisión continua y búsqueda exhaustiva, identificaremos posibles riesgos, y definiremos estrategias para mitigarlos antes de que tengan un impacto en el proyecto.
+
+| Clave   | Descripción                                                                                         |
+|---------|---------------------------------------------------------------------------------------------------|
+| RI-001  | El LLM que utilizamos se equivoca al modificar un problema                                        |
+| RI-002  | Alguna dependencia no es compatible con las demás tecnologías que utilizamos                       |
+| RI-003  | Inventario de la tienda inexacto                                                                  |
+| RI-004  | Los usuarios no se sienten cómodos con la dificultad de los problemas                              |
+| RI-005  | Sobrecarga de la plataforma por falta de recursos para mejorar el servidor                         |
+| RI-006  | Algún servicio externo se cae durante la presentación al socio                                     |
+| RI-007  | Error de precisión en alguna de las tags de un problema                                           |
+| RI-008  | Cantidad de dinero digital inexacto                                                               |
+| RI-009  | Se presenta algún bug en la tienda que impida a los usuarios redimir sus recompensas              |
+| RI-010  | Corrupción de la base de datos debido a un error en el sistema de respaldo, afectando a todos los usuarios |
+| RI-011  | Los problemas de programación no se refrescan correctamente, mostrando desafíos obsoletos o eliminados |
+| RI-012  | Se elimina accidentalmente información en la base de datos                                        |
+| RI-013  | Cierre forzado de la plataforma por problemas legales o de derechos de autor                      |
+| RI-014  | Desincronización con Judge0, causando que el código enviado no se evalúe correctamente o tome demasiado tiempo |
+| RI-015  | Ataque cibernético que tumbe el proyecto por completo                                             |
+| RI-016  | Vulnerabilidades en dependencias de código                                                        |
+
+---
+
+### 3. Evaluación de Riesgos
+
+#### Análisis de riesgos
+
+| Clave  | Probabilidad             | Impacto        | Prioridad |
+|--------|-------------------------|----------------|-----------|
+| RI-001 | Muy Probable (5)        | Insignificante (1) | 5         |
+| RI-002 | Muy Probable (5)        | Moderada (3)   | 15        |
+| RI-003 | Probable (4)            | Menor (2)      | 8         |
+| RI-004 | Probable (4)            | Moderada (3)   | 12        |
+| RI-005 | Probable (4)            | Importante (4) | 16        |
+| RI-006 | Probable (4)            | Catastrófica (5) | 20        |
+| RI-007 | Posible (3)             | Insignificante (1) | 3         |
+| RI-008 | Posible (3)             | Moderada (3)   | 9         |
+| RI-009 | Posible (3)             | Importante (4) | 12        |
+| RI-010 | Posible (3)             | Catastrófica (5) | 15        |
+| RI-011 | No es probable (2)      | Moderada (3)   | 6         |
+| RI-012 | No es probable (2)      | Importante (4) | 8         |
+| RI-013 | No es probable (2)      | Catastrófica (5) | 10        |
+| RI-014 | Muy improbable (1)      | Importante (4) | 4         |
+| RI-015 | Muy improbable (1)      | Catastrófica (5) | 5         |
+| RI-016 | Posible (2)             | Menor (3)      | 6         |
+
+#### Clasificación de riesgos por nivel
+
+- **Riesgo Bajo (Verde):**  
+  RI-001, RI-007, RI-011, RI-014, RI-015, RI-016
+
+- **Riesgo Medio (Amarillo):**  
+  RI-003, RI-004, RI-008, RI-009, RI-012, RI-013
+
+- **Riesgo Alto (Rojo):**  
+  RI-002, RI-005, RI-006, RI-010
+
+
+![image](https://github.com/user-attachments/assets/f57f990c-9ac5-4306-b105-56bf85c2a965)
+
+---
+
+### 4. Planificación de Estrategias de Mitigación
+
+| Riesgo                         | Estrategias de mitigación                                                                                      |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------|
+| **RI-001** El LLM se equivoca al modificar un problema | - Limitar el alcance de la LLM a tareas específicas (solo redacción).<br>- Revisión manual periódica.           |
+| **RI-002** Dependencia incompatible                | - Pruebas de integración antes de implementar.<br>- Plan de contingencia para reemplazo.                       |
+| **RI-003** Inventario inexacto                       | - Revisiones rutinarias.<br>- Sistema de colas para actualizaciones concurrentes.                              |
+| **RI-004** Usuarios incómodos con dificultad        | - Filtrado por dificultad.<br>- Feedback continuo para ajustes.                                              |
+| **RI-005** Sobrecarga por recursos insuficientes    | - Optimización de código y consultas.<br>- Pruebas de estrés periódicas.                                      |
+| **RI-006** Caída de servicio externo                 | - Respaldo audiovisual (capturas, videos) para presentaciones.                                               |
+| **RI-007** Error en tags de problema                  | - Permitir reportes de usuarios.<br>- Revisiones manuales periódicas.                                        |
+| **RI-008** Dinero digital inexacto                    | - Sistema de respaldo para restaurar saldos.                                                                  |
+| **RI-009** Bug que impida redención en tienda         | - Soporte preparado para resolver rápido.<br>- Ofrecer recompensas a usuarios afectados.                      |
+| **RI-010** Corrupción base de datos                   | - Respaldos regulares.<br>- Monitoreo continuo.                                                               |
+| **RI-011** Problemas no se refrescan correctamente    | - Caché con invalidación automática.<br>- Reportes de usuarios para problemas obsoletos.                      |
+| **RI-012** Eliminación accidental en base de datos    | - Respaldos.<br>- Sistema de papelera de reciclaje.                                                           |
+| **RI-013** Cierre por problemas legales               | - Equipo legal y cumplimiento normativo.<br>- Contenidos originales o con licencias.                          |
+| **RI-014** Desincronización con Judge0                | - Servicio alternativo de evaluación.<br>- Reintentos automáticos.                                            |
+| **RI-015** Ataque cibernético                           | - Medidas de seguridad robustas (encriptación, 2FA).<br>- Plan de respuesta a incidentes.                     |
+| **RI-016** Vulnerabilidades en dependencias            | - Uso de dependencias confiables y actualizadas.<br>- Uso de lock files para versiones específicas.           |
+
+---
+
+### 5. Establecimiento de Medidas de Control
+
+- **Seguimiento continuo:** Monitoreo periódico de sistemas y procesos clave durante 2 meses para detectar señales tempranas.  
+- **Registro y revisión de logs y auditorías:** Auditorías de seguridad y análisis para detectar anomalías.  
+- **Pruebas regulares:** Estrés, integración y pruebas unitarias para evaluar estabilidad.  
+- **Mantenimiento de dependencias:** Revisión y actualización constante para minimizar vulnerabilidades.  
+- **Evaluación de rendimiento:** Análisis de carga para prevenir problemas de escalabilidad.  
+- **Estrategia de mitigación de incidentes:** Planes de acción para responder rápidamente ante incidentes.  
+
+---
+
+### 6. Comunicación y Colaboración
+
+Durante el proyecto se fomentará una comunicación abierta para gestionar los riesgos de manera efectiva:
+
+- **Comunicación con socio formador:** Reportes regulares y discusión de riesgos y soluciones.  
+- **Documentación:** Registro detallado de riesgos, mitigaciones y respuestas.  
+- **Feedback:** Retroalimentación continua del equipo para mejorar gestión de riesgos.  
+
+---
+
+### 7. Conclusión
+
+En este documento identificamos, evaluamos y creamos planes de mitigación para los riesgos que pueden afectar el desarrollo de nuestro proyecto para Code Courses. Entre los riesgos más críticos destacan la caída de servicios externos durante la presentación (RI-006), la corrupción de la base de datos (RI-010) y la sobrecarga del servidor (RI-005). Para evitar y poder abordar estos riesgos, deberemos seguir los planes de acción que hemos desarrollado.
+
+El proyecto presenta un nivel de riesgo moderado, sin embargo, una buena ejecución de nuestras tareas y seguimiento a los estándares y planes de mitigación propuestos reducirán de manera efectiva su impacto. Un desarrollo proactivo en la prevención y control de riesgos garantizará la estabilidad y seguridad de nuestro sistema, minimizando interrupciones y ofreciendo una plataforma confiable para los usuarios de Tech Mahindra.
+
+---
+
