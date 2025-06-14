@@ -2,7 +2,7 @@
 
 ## Índice
 
-- [1. Historias de Usuario con Caso de Uso](#historias-de-usuario:)
+- [1. Historias de Usuario con Caso de Uso](#historias-de-usuario)
 - [2. Plan de pruebas](#2-plan-de-pruebas)
 - [2.1 Diseño de pruebas](#diseño-de-pruebas)
 - [2.2 Limitaciones en el alcance de las pruebas](#limitaciones-en-el-alcance-de-las-pruebas)
