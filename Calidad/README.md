@@ -1,8 +1,11 @@
-# 4. Calidad (M5)
+# Calidad (M5)
+
+## Índice
+- [1. Historias de Usuario con Caso de Uso](#historias-de-usuario:)
+- [2. Plan de pruebas](#2-plan-de-pruebas)
 
 ## Historias de Usuario: 
 Se puede ver funcionales en video demo.
-
 
 #### HU-001 - Login de Usuario
 **Descripción:** Como usuario y trabajador de la empresa, quiero poder ingresar a la plataforma.  
@@ -96,6 +99,8 @@ Se puede ver funcionales en video demo.
 
 ## Plan de pruebas
 
+### Diseño de pruebas
+
 El plan de pruebas cubre los siguientes aspectos:
 - Pruebas de desempeño: Se analizará la rapidez de respuesta del sistema.
 - Pruebas de estrés: Se evaluará la capacidad de la plataforma bajo condiciones extremas.
@@ -104,6 +109,14 @@ El plan de pruebas cubre los siguientes aspectos:
 - Pruebas unitarias: Se probarán funciones individuales del sistema, sobretodo desde el lado del módulo de datos.
 - Pruebas de aceptación: Se comprobará que la plataforma cumpla con los requisitos del usuario final.
 
+---
+
+### Limitaciones en el alcance de las pruebas
+Debido a restricciones de tiempo y recursos, no se contempla la cobertura total de todas las áreas de prueba. Si bien reconocemos la importancia de validar el uso eficiente de recursos, realizar pruebas de carga con un número alto de usuarios concurrentes (por ejemplo, ~1000) podría sobrepasar la capacidad actual de nuestra máquina virtual y base de datos.
+
+No obstante, mitigamos este riesgo mediante técnicas de troubleshooting y monitoreo del consumo durante la ejecución del sistema, como la implementación de procesos en single drop, controlando explícitamente la asignación de recursos por instancia.
+
+Adicionalmente, las pruebas actuales no contemplan casos de uso con usuarios que empleen distintos lenguajes, dado el bajo impacto previsto en esta etapa y el tiempo limitado para entrega. Sin embargo, esta funcionalidad sería una mejora valiosa para una futura versión en producción.
 
 ---
 
@@ -978,6 +991,20 @@ Fotos de analísis de código con SonarQube:
 ![Captura de pantalla 2025-06-13 190237](https://github.com/user-attachments/assets/cf07c4c2-0eef-41cc-a9e7-73e7909c4195)
 
 
-Dificultades encontradas:
+**Dificultades encontradas:**
 
 No logramos correctamente unir dentro de nuestro análisis con SonarQube el Coverage de líneas que testeamos automáticamente, por lo cual no salía dentro de nuestro análisis presente. A pesar de esto, nuestro testeo manual y automatizado, evitar duplicación de código y buenas practicas aseguran una alta calidad en nuestro código entregado.
+
+## Referencias
+CodeForces. (2024). CodeForces Problem Set. https://codeforces.com/problemset
+Go. (2024). The Go Programming Language. https://golang.org/
+International Organization for Standardization. (2011). Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) (ISO/IEC 25010:2011). https://www.iso.org/standard/35733.html
+International Organization for Standardization. (2015). Quality management systems — Requirements (ISO 9001:2015). https://www.iso.org/standard/62085.html
+International Organization for Standardization. (2017). Systems and software engineering — Software life cycle processes (ISO/IEC 12207:2017). https://www.iso.org/standard/63712.html
+International Organization for Standardization. (2022). Software and systems engineering — Software testing (ISO/IEC 29119:2022). https://www.iso.org/standard/79439.html
+Judge0. (2023). Judge0 API Documentation. https://judge0.com/
+PostgreSQL. (2024). PostgreSQL Documentation. https://www.postgresql.org/docs/
+React. (2024). React Documentation. https://react.dev/
+Software Engineering Institute. (2018). CMMI for Development, Version 2.0. Carnegie Mellon University. https://cmmiinstitute.com/cmmi
+SonarSource. (2024). SonarQube Documentation. https://docs.sonarqube.org/
+
