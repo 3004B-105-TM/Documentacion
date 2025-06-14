@@ -249,10 +249,10 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-001 – Redirección tras login exitoso
 
-**Historia relacionada:** HU-001 - Login de Usuario
-**Objetivo:** Validar que el usuario autenticado sea redirigido al dashboard.
+- **Historia relacionada:** HU-001 - Login de Usuario
+- **Objetivo:** Validar que el usuario autenticado sea redirigido al dashboard.
 **Datos de entrada:** Email: [user@empresa.com](mailto:user@empresa.com), Contraseña: correcta123
-**Pasos:**
+- **Pasos:**
 
 1. Ir al formulario de login
 2. Ingresar correo y contraseña válidos
@@ -263,10 +263,10 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-002 – Login con credenciales inválidas
 
-**Historia relacionada:** HU-001 - Login de Usuario
-**Objetivo:** Validar que se muestre un mensaje de error al ingresar credenciales incorrectas.
+- **Historia relacionada:** HU-001 - Login de Usuario
+- **Objetivo:** Validar que se muestre un mensaje de error al ingresar credenciales incorrectas.
 **Datos de entrada:** Email: [falso@mail.com](mailto:falso@mail.com), Contraseña: error123
-**Pasos:**
+- **Pasos:**
 
 1. Ir al login
 2. Ingresar datos inválidos
@@ -277,10 +277,10 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-003 – Filtro por dificultad “Difícil”
 
-**Historia relacionada:** HU-003 - Filtrar Problemas
-**Objetivo:** Validar que solo se muestren problemas difíciles al aplicar ese filtro.
+- **Historia relacionada:** HU-003 - Filtrar Problemas
+- **Objetivo:** Validar que solo se muestren problemas difíciles al aplicar ese filtro.
 **Datos de entrada:** Dificultad: Difícil
-**Pasos:**
+- **Pasos:**
 
 1. Ir a sección de problemas
 2. Seleccionar filtro “Difícil”
@@ -290,9 +290,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-004 – Ver detalles de un problema
 
-**Historia relacionada:** HU-004 - Ver Detalles del Problema
-**Objetivo:** Validar que se muestra título, descripción y ejemplos al abrir un problema
-**Pasos:**
+- **Historia relacionada:** HU-004 - Ver Detalles del Problema
+- **Objetivo:** Validar que se muestra título, descripción y ejemplos al abrir un problema
+- **Pasos:**
 
 1. Ir a lista de problemas
 2. Seleccionar un problema
@@ -302,10 +302,10 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-005 – Ejecución de código simple
 
-**Historia relacionada:** HU-005 - Escribir y Ejecutar Código
-**Objetivo:** Validar que el código enviado se ejecute correctamente
+- **Historia relacionada:** HU-005 - Escribir y Ejecutar Código
+- **Objetivo:** Validar que el código enviado se ejecute correctamente
 **Datos de entrada:** Código: `print("Hello")`
-**Pasos:**
+- **Pasos:**
 
 1. Escribir código en el editor
 2. Hacer clic en “Ejecutar”
@@ -315,9 +315,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-006 – Recompensa tras resolver un problema
 
-**Historia relacionada:** HU-006 - Sistema de Recompensas
-**Objetivo:** Verificar que se otorguen puntos y XP al resolver un problema
-**Pasos:**
+- **Historia relacionada:** HU-006 - Sistema de Recompensas
+- **Objetivo:** Verificar que se otorguen puntos y XP al resolver un problema
+- **Pasos:**
 
 1. Resolver problema con código válido
 2. Enviar solución
@@ -327,9 +327,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-007 – Visualización del dashboard
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Validar que se muestra el progreso, puntos y ranking del usuario
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Validar que se muestra el progreso, puntos y ranking del usuario
+- **Pasos:**
 
 1. Iniciar sesión
 2. Acceder al dashboard
@@ -339,10 +339,10 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-008 – Soporte para múltiples lenguajes
 
-**Historia relacionada:** HU-005 - Escribir y Ejecutar Código
-**Objetivo:** Validar que la plataforma soporte varios lenguajes (Python, JS, C++, C#)
+- **Historia relacionada:** HU-005 - Escribir y Ejecutar Código
+- **Objetivo:** Validar que la plataforma soporte varios lenguajes (Python, JS, C++, C#)
 **Datos de entrada:** Código de ejemplo en cada lenguaje
-**Pasos:**
+- **Pasos:**
 
 1. Escribir código en el lenguaje elegido
 2. Ejecutar
@@ -352,9 +352,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-009 – Confirmación de compras de recompensas
 
-**Historia relacionada:** HU-006 - Sistema de Recompensas
-**Objetivo:** Validar lógica de compra: requiere puntos suficientes y stock
-**Pasos:**
+- **Historia relacionada:** HU-006 - Sistema de Recompensas
+- **Objetivo:** Validar lógica de compra: requiere puntos suficientes y stock
+- **Pasos:**
 
 1. Acceder a tienda
 2. Intentar comprar recompensa
@@ -364,9 +364,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-010 – Activación de badges por condiciones
 
-**Historia relacionada:** HU-006 - Sistema de Recompensas
-**Objetivo:** Confirmar que al cumplir condiciones se otorga badge
-**Pasos:**
+- **Historia relacionada:** HU-006 - Sistema de Recompensas
+- **Objetivo:** Confirmar que al cumplir condiciones se otorga badge
+- **Pasos:**
 
 1. Resolver problemas hasta cumplir condiciones
 2. Revisar perfil
@@ -376,9 +376,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-011 – Navbar nueva visible en todas las pantallas
 
-**Historia relacionada:** Sin historia de usuario relacionada
-**Objetivo:** Verificar visibilidad y funcionalidad del navbar en todo el sitio
-**Pasos:**
+- **Historia relacionada:** Sin historia de usuario relacionada
+- **Objetivo:** Verificar visibilidad y funcionalidad del navbar en todo el sitio
+- **Pasos:**
 
 1. Navegar por varias vistas
    **Resultado esperado:** Navbar visible y funcional en todas
@@ -387,9 +387,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-012 – Tests corren dentro del mismo contenedor Docker
 
-**Historia relacionada:** HU-005 - Escribir y Ejecutar Código
-**Objetivo:** Validar ejecución de tests en el entorno dockerizado
-**Pasos:**
+- **Historia relacionada:** HU-005 - Escribir y Ejecutar Código
+- **Objetivo:** Validar ejecución de tests en el entorno dockerizado
+- **Pasos:**
 
 1. Enviar código con pruebas
 2. Ejecutar
@@ -399,9 +399,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-013 – Renderizado del componente Leaderboard
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Verificar que el componente leaderboard se renderiza correctamente con sus encabezados
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Verificar que el componente leaderboard se renderiza correctamente con sus encabezados
+- **Pasos:**
 
 1. Iniciar sesión
 2. Navegar al leaderboard
@@ -411,9 +411,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-014 – Simulación de usuario con useUser
 
-**Historia relacionada:** HU-001 - Login de Usuario
-**Objetivo:** Validar que el hook `useUser` simula correctamente un usuario autenticado
-**Pasos:**
+- **Historia relacionada:** HU-001 - Login de Usuario
+- **Objetivo:** Validar que el hook `useUser` simula correctamente un usuario autenticado
+- **Pasos:**
 
 1. Mockear `useUser` en test
 2. Renderizar componente dependiente
@@ -423,9 +423,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-015 – Mock del componente UserProfileModal
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Aislar pruebas de leaderboard evitando el render real del modal
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Aislar pruebas de leaderboard evitando el render real del modal
+- **Pasos:**
 
 1. Mockear `UserProfileModal`
 2. Renderizar leaderboard
@@ -435,9 +435,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-016 – Simulación de fetch para leaderboard
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Validar render del leaderboard con datos simulados
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Validar render del leaderboard con datos simulados
+- **Pasos:**
 
 1. Mockear fetch con usuarios
 2. Renderizar leaderboard
@@ -447,9 +447,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-017 – Datos de leaderboard mostrados correctamente
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Confirmar que se renderizan correctamente nombres y datos
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Confirmar que se renderizan correctamente nombres y datos
+- **Pasos:**
 
 1. Cargar leaderboard con datos
    **Resultado esperado:** Aparecen usuarios como “Alice”, “Bob”, etc.
@@ -458,9 +458,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-018 – Uso de temporizadores fake
 
-**Historia relacionada:** Sin historia de usuario relacionada
-**Objetivo:** Validar control de tiempo artificial para pruebas de animaciones o retrasos
-**Pasos:**
+- **Historia relacionada:** Sin historia de usuario relacionada
+- **Objetivo:** Validar control de tiempo artificial para pruebas de animaciones o retrasos
+- **Pasos:**
 
 1. Activar `vi.useFakeTimers()`
 2. Ejecutar función temporizada
@@ -470,9 +470,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-019 – Limpieza de mocks entre pruebas
 
-**Historia relacionada:** Sin historia de usuario relacionada
-**Objetivo:** Confirmar que no hay mocks persistentes entre tests
-**Pasos:**
+- **Historia relacionada:** Sin historia de usuario relacionada
+- **Objetivo:** Confirmar que no hay mocks persistentes entre tests
+- **Pasos:**
 
 1. Ejecutar varios tests
 2. Verificar estado de mocks
@@ -482,9 +482,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-020 – Columna de nivel en leaderboard
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Validar que se muestra la columna de nivel de usuario correctamente
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Validar que se muestra la columna de nivel de usuario correctamente
+- **Pasos:**
 
 1. Renderizar leaderboard
    **Resultado esperado:** Se visualizan niveles como “100”, “90”, etc.
@@ -493,9 +493,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-021 – Render sin errores con datos correctos
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Verificar estabilidad del render con props válidas
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Verificar estabilidad del render con props válidas
+- **Pasos:**
 
 1. Renderizar leaderboard con datos válidos
    **Resultado esperado:** No hay errores o advertencias en consola
@@ -504,9 +504,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-022 – Elementos esperados en el DOM
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Validar que todos los encabezados y nombres estén presentes
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Validar que todos los encabezados y nombres estén presentes
+- **Pasos:**
 
 1. Renderizar leaderboard
    **Resultado esperado:** Todos los elementos clave son visibles
@@ -515,9 +515,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-023 – Renderizado de Badge con texto
 
-**Historia relacionada:** HU-006 - Sistema de Recompensas
-**Objetivo:** Confirmar render correcto del texto de badge
-**Pasos:**
+- **Historia relacionada:** HU-006 - Sistema de Recompensas
+- **Objetivo:** Confirmar render correcto del texto de badge
+- **Pasos:**
 
 1. Renderizar badge con prop `label="Fast Solver"`
    **Resultado esperado:** Texto “Fast Solver” visible en pantalla
@@ -526,9 +526,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-024 – Componente de ejemplo muestra contenido
 
-**Historia relacionada:** Sin historia de usuario relacionada
-**Objetivo:** Validar visualización del contenido dummy de un componente demo
-**Pasos:**
+- **Historia relacionada:** Sin historia de usuario relacionada
+- **Objetivo:** Validar visualización del contenido dummy de un componente demo
+- **Pasos:**
 
 1. Renderizar componente
    **Resultado esperado:** Se muestra texto de demostración
@@ -537,9 +537,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-025 – Spinner de carga visible durante carga
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Confirmar visualización del spinner cuando datos están cargando
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Confirmar visualización del spinner cuando datos están cargando
+- **Pasos:**
 
 1. Simular carga
    **Resultado esperado:** Spinner es visible en pantalla
@@ -548,9 +548,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-026 – Render de página de privacidad
 
-**Historia relacionada:** HU-002 - Ver contenido legal
-**Objetivo:** Validar que la página muestra correctamente la política de privacidad
-**Pasos:**
+- **Historia relacionada:** HU-002 - Ver contenido legal
+- **Objetivo:** Validar que la página muestra correctamente la política de privacidad
+- **Pasos:**
 
 1. Ir a `/privacidad`
    **Resultado esperado:** Se muestra contenido legal actualizado
@@ -559,9 +559,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-027 – Select funcional
 
-**Historia relacionada:** HU-003 - Filtrar Problemas
-**Objetivo:** Validar que se puede seleccionar opciones correctamente
-**Pasos:**
+- **Historia relacionada:** HU-003 - Filtrar Problemas
+- **Objetivo:** Validar que se puede seleccionar opciones correctamente
+- **Pasos:**
 
 1. Abrir select
 2. Elegir opción
@@ -571,9 +571,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-028 – Tabla muestra filas con mock
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Confirmar render de tabla con filas de datos simulados
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Confirmar render de tabla con filas de datos simulados
+- **Pasos:**
 
 1. Renderizar tabla con mock
    **Resultado esperado:** Se muestran las filas esperadas
@@ -582,9 +582,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-029 – Página de términos visible
 
-**Historia relacionada:** HU-002 - Ver contenido legal
-**Objetivo:** Verificar visualización del contenido legal de términos y condiciones
-**Pasos:**
+- **Historia relacionada:** HU-002 - Ver contenido legal
+- **Objetivo:** Verificar visualización del contenido legal de términos y condiciones
+- **Pasos:**
 
 1. Ir a `/terminos`
    **Resultado esperado:** Todo el contenido está correctamente visible
@@ -593,9 +593,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-030 – Cambio de tema claro/oscuro
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Confirmar que se alterna correctamente entre temas
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Confirmar que se alterna correctamente entre temas
+- **Pasos:**
 
 1. Activar toggle de tema
    **Resultado esperado:** Tema cambia sin errores
@@ -604,9 +604,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-031 – Toaster muestra notificaciones
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Validar que aparecen notificaciones tras eventos
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Validar que aparecen notificaciones tras eventos
+- **Pasos:**
 
 1. Simular evento con éxito
    **Resultado esperado:** Aparece toast correspondiente
@@ -615,9 +615,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-032 – Importación de componentes sin errores
 
-**Historia relacionada:** Sin historia de usuario relacionada
-**Objetivo:** Asegurar compatibilidad entre todos los componentes al renderizar juntos
-**Pasos:**
+- **Historia relacionada:** Sin historia de usuario relacionada
+- **Objetivo:** Asegurar compatibilidad entre todos los componentes al renderizar juntos
+- **Pasos:**
 
 1. Renderizar App con todos los componentes
    **Resultado esperado:** No hay errores ni conflictos
@@ -626,9 +626,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-033 – Carga de página de inicio
 
-**Historia relacionada:** HU-001 - Login de Usuario
-**Objetivo:** Validar que la home se renderiza correctamente
-**Pasos:**
+- **Historia relacionada:** HU-001 - Login de Usuario
+- **Objetivo:** Validar que la home se renderiza correctamente
+- **Pasos:**
 
 1. Visitar `/`
    **Resultado esperado:** Página cargada exitosamente
@@ -637,9 +637,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-034 – Navegación entre secciones
 
-**Historia relacionada:** HU-001, HU-007
-**Objetivo:** Validar funcionamiento de navegación básica
-**Pasos:**
+- **Historia relacionada:** HU-001, HU-007
+- **Objetivo:** Validar funcionamiento de navegación básica
+- **Pasos:**
 
 1. Usar navbar
 2. Navegar a diferentes secciones
@@ -649,9 +649,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-035 – Botón renderiza y responde
 
-**Historia relacionada:** Sin historia de usuario relacionada
-**Objetivo:** Confirmar render y funcionalidad básica de botones
-**Pasos:**
+- **Historia relacionada:** Sin historia de usuario relacionada
+- **Objetivo:** Confirmar render y funcionalidad básica de botones
+- **Pasos:**
 
 1. Renderizar botón
 2. Hacer clic
@@ -661,9 +661,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-036 – Card muestra contenido hijo
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Verificar que el componente `Card` muestra correctamente contenido anidado
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Verificar que el componente `Card` muestra correctamente contenido anidado
+- **Pasos:**
 
 1. Renderizar card con children
    **Resultado esperado:** Contenido visible correctamente
@@ -672,9 +672,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-037 – Verificación de texto en card
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Validar que el texto contenido en una `Card` es renderizado correctamente
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Validar que el texto contenido en una `Card` es renderizado correctamente
+- **Pasos:**
 
 1. Renderizar `Card` con texto "Avance actual"
    **Resultado esperado:** Se visualiza el texto dentro del componente
@@ -683,9 +683,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-038 – Interacción con toggle switch
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Verificar que el switch alterna correctamente entre estados
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Verificar que el switch alterna correctamente entre estados
+- **Pasos:**
 
 1. Renderizar componente con `Switch`
 2. Hacer clic en el toggle
@@ -695,9 +695,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-039 – Componente de tabla renderiza headers
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Confirmar que los encabezados de la tabla se muestran correctamente
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Confirmar que los encabezados de la tabla se muestran correctamente
+- **Pasos:**
 
 1. Renderizar tabla
    **Resultado esperado:** Se visualizan encabezados como “Usuario”, “Nivel”
@@ -706,9 +706,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-040 – Renderización del modal de perfil
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Validar que el modal se abre y muestra la información del perfil
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Validar que el modal se abre y muestra la información del perfil
+- **Pasos:**
 
 1. Clic en usuario en leaderboard
    **Resultado esperado:** Se abre modal con detalles del usuario
@@ -717,9 +717,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-041 – Cierre del modal de perfil
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Verificar que el usuario puede cerrar el modal sin errores
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Verificar que el usuario puede cerrar el modal sin errores
+- **Pasos:**
 
 1. Abrir modal
 2. Clic en botón de cerrar
@@ -729,10 +729,10 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-042 – Componente `ProgressBar` muestra progreso
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Validar que la barra de progreso se actualiza según porcentaje
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Validar que la barra de progreso se actualiza según porcentaje
 **Datos de entrada:** porcentaje: 75
-**Pasos:**
+- **Pasos:**
 
 1. Renderizar `ProgressBar`
    **Resultado esperado:** Se muestra visualmente el 75% de avance
@@ -741,9 +741,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-043 – Resaltado de problemas resueltos
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Confirmar que los problemas ya resueltos aparecen marcados
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Confirmar que los problemas ya resueltos aparecen marcados
+- **Pasos:**
 
 1. Acceder a lista de problemas
 2. Ver un problema ya resuelto
@@ -753,9 +753,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-044 – Vista de resumen del perfil
 
-**Historia relacionada:** HU-007 - Dashboard de Avances
-**Objetivo:** Validar que el resumen del perfil muestra información clave
-**Pasos:**
+- **Historia relacionada:** HU-007 - Dashboard de Avances
+- **Objetivo:** Validar que el resumen del perfil muestra información clave
+- **Pasos:**
 
 1. Ir a página de perfil
    **Resultado esperado:** Se muestra nombre, puntos, medallas
@@ -764,10 +764,10 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-045 – Validación de inputs en el editor
 
-**Historia relacionada:** HU-005 - Escribir y Ejecutar Código
-**Objetivo:** Asegurar que el editor detecta código vacío o mal formado
+- **Historia relacionada:** HU-005 - Escribir y Ejecutar Código
+- **Objetivo:** Asegurar que el editor detecta código vacío o mal formado
 **Datos de entrada:** (editor vacío)
-**Pasos:**
+- **Pasos:**
 
 1. Dejar el editor en blanco
 2. Clic en “Ejecutar”
@@ -777,10 +777,10 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 ### TC-046 – Manejo de errores en ejecución de código
 
-**Historia relacionada:** HU-005 - Escribir y Ejecutar Código
-**Objetivo:** Verificar que errores en el código se manejan y muestran correctamente
+- **Historia relacionada:** HU-005 - Escribir y Ejecutar Código
+- **Objetivo:** Verificar que errores en el código se manejan y muestran correctamente
 **Datos de entrada:** Código inválido (por ejemplo, `prnt("Hola")`)
-**Pasos:**
+- **Pasos:**
 
 1. Escribir código con error
 2. Ejecutar
@@ -790,9 +790,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-007 – Dashboard de Avances
-**Objetivo:** Verificar que el componente `Mission` renderiza correctamente el nombre y el ícono asociado
+- **Objetivo:** Verificar que el componente `Mission` renderiza correctamente el nombre y el ícono asociado
 **Datos de entrada:** Misión con nombre `"Primer Desafío"` y `icon: "trophy"`
-**Pasos:**
+- **Pasos:**
 
 1. Renderizar componente `Mission` con props
 2. Observar nombre e ícono
@@ -807,9 +807,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-006 – Sistema de Recompensas
-**Objetivo:** Verificar que la función `calculatePoints(difficulty)` retorna los puntos correctos
+- **Objetivo:** Verificar que la función `calculatePoints(difficulty)` retorna los puntos correctos
 **Datos de entrada:** Dificultades: 1, 3, 5
-**Pasos:**
+- **Pasos:**
 
 1. Ejecutar función con cada dificultad
    **Resultado esperado:**
@@ -824,9 +824,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-007 – Dashboard de Avances
-**Objetivo:** Asegurar que el estado `status` en problemas se maneja correctamente para los tres casos
+- **Objetivo:** Asegurar que el estado `status` en problemas se maneja correctamente para los tres casos
 **Datos de entrada:** Problemas con `status = true`, `false`, `null`
-**Pasos:**
+- **Pasos:**
 
 1. Renderizar lista de problemas
 2. Validar visualmente o con clase CSS el estado aplicado
@@ -842,9 +842,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-004 – Asignación de Dificultad
-**Objetivo:** Verificar que se generan estrellas según nivel de dificultad
+- **Objetivo:** Verificar que se generan estrellas según nivel de dificultad
 **Datos de entrada:** Dificultad 1, 3, 5
-**Pasos:**
+- **Pasos:**
 
 1. Renderizar componente de dificultad
 2. Contar estrellas
@@ -860,9 +860,9 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-007 – Dashboard de Avances
-**Objetivo:** Verificar que los puntos se muestran en el formato correcto `"XX MC"`
+- **Objetivo:** Verificar que los puntos se muestran en el formato correcto `"XX MC"`
 **Datos de entrada:** Puntos: 10, 20, 35
-**Pasos:**
+- **Pasos:**
 
 1. Renderizar componente de puntuación
    **Resultado esperado:**
@@ -876,8 +876,8 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 
 **Fecha:** 13/06/2025
 **Historia de usuario:** HU-005 – Escribir y Ejecutar Código
-**Objetivo:** Validar que los componentes principales se renderizan correctamente usando mocks
-**Pasos:**
+- **Objetivo:** Validar que los componentes principales se renderizan correctamente usando mocks
+- **Pasos:**
 
 1. Mockear dependencias: `react-icons`, `lucide-react`
 2. Renderizar componente principal (`ChallengeCard`, `Mission`, etc.)
