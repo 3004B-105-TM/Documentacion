@@ -259,7 +259,7 @@ Se puede ver funcionales en video demo.
 ## 6. CI/CD con GitHub Actions
 
 - ✅ Linting automático con cada PR.
-- ✅ Tests automáticos con Jest/Vitest.
+- ✅ Tests automáticos con Jest/Vitest. (ver documentación Tests)
 - ✅ Docker build & deploy:
   - Revisión y pruebas antes de producción.
 
