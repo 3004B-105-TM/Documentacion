@@ -262,6 +262,64 @@ correr npx vitest en tm-front
 - Frontend en http://142.93.10.227:5173/
 ---
 
+Corrimos todo con el siguiente archivo bash:
+#!/bin/bash
+
+# Function to print section headers
+print_header() {
+    echo "==========================================="
+    echo "$1"
+    echo "==========================================="
+}
+
+# Function to check and kill process using a port
+kill_port() {
+    local port=$1
+    local pid=$(lsof -t -i:$port)
+    if [ ! -z "$pid" ]; then
+        echo "Killing process $pid using port $port"
+        kill $pid
+        sleep 2
+    fi
+}
+
+# Update backend
+print_header "Updating Backend Service"
+cd code-execution-service
+
+# Kill any processes using the required ports
+kill_port 8080  # API port
+kill_port 8081  # Worker port
+kill_port 6380  # Redis port
+
+# Clean up and restart
+docker-compose down
+docker-compose up -d --build
+echo "Backend service updated and restarted"
+
+# Update frontend
+print_header "Updating Frontend Service"
+cd ../tm-front
+npm install
+npm run build
+systemctl restart tm-front.service
+echo "Frontend service updated and restarted"
+
+print_header "All services have been updated!"
+echo "Backend API: http://localhost:8080"
+echo "Frontend: http://localhost:5173"
+
+# Verify services are running
+print_header "Verifying Services"
+echo "Checking backend containers..."
+docker ps | grep code-execution-service
+echo "Checking frontend service..."
+systemctl status tm-front.service | grep "Active:"
+
+
+Gracias a este ejecutable, pudimos facilmente verificar pruebas de ejecutadores en cada lenguaje, verificar que tanto front end y backend esten activos, y actualizar (despues de hacer git pull en cada repositorio).
+
+
 ## 6. CI/CD con GitHub Actions
 
 - ✅ Linting automático con cada PR.
