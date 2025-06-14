@@ -141,6 +141,11 @@ Aunque no se utilizó **Next.js**, se siguieron convenciones inspiradas en sus b
 ---
 
 ## 4. Calidad (M5)
+
+
+
+[Link Documentación completa: Carpeta Calidad](https://github.com/3004B-105-TM/Documentacion/blob/main/Calidad/README.md)
+
  
 - ### **Pruebas automatizadas :**
 
