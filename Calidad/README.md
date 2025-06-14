@@ -961,3 +961,7 @@ Durante el proyecto se fomentará una comunicación abierta para gestionar los r
 
 ---
 
+## Reporte de uso SonarQube
+
+
+
