@@ -229,7 +229,7 @@ Todas estas pruebas fueron validades de manera manual durante el desarrollo de n
 
 ## Pruebas Automatizadas con Vitest, Jest, Cypress
 
-Para ver archivos tests, ver carpeta en test en front end para ver fotos de ejecución en terminal, esta en carpeta evidencias.
+Para ver archivos tests, ver carpeta en test en front end para ver fotos de ejecución en terminal, esta en carpeta tests.
 
 ### TC-001 – Redirección tras login exitoso
 
