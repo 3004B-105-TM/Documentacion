@@ -12,11 +12,12 @@
 - [2.6 Pruebas funcionales](#pruebas-funcionales)
 - [2.7 Pruebas unitarias](#pruebas-unitarias)
 - [2.8 Pruebas de aceptación](#pruebas-de-aceptación)
-- [3. Equipo de Calidad](#equipo-de-calidad)
-- [4. Estándares aplicados](#estándares-aplicados)
-- [5. Plan de riesgos](#plan-de-riesgos)
-- [6. Reporte de uso SonarQube](#reporte-de-uso-sonarqube)
-- [7. Referencias](#referencias)
+- [3. Pruebas Automatizadas con Vitest, Jest, Cypress](#pruebas-automatizadas-con-vitest,-jest,-cypress)
+- [4. Equipo de Calidad](#equipo-de-calidad)
+- [5. Estándares aplicados](#estándares-aplicados)
+- [6. Plan de riesgos](#plan-de-riesgos)
+- [7. Reporte de uso SonarQube](#reporte-de-uso-sonarqube)
+- [8. Referencias](#referencias)
 
 ## Historias de Usuario:
 
@@ -226,26 +227,7 @@ Todas estas pruebas fueron validades de manera manual durante el desarrollo de n
 
 ---
 
-## Equipo de Calidad
-
-Roles de cada miembro del equipo:
-
-- Fernando Morán Fougerat: Validación de pruebas de estrés y unitarias.
-- Imanol Armando González Solís: Validación de pruebas de carga.
-- Rogelio Garza Rendón: Validación de pruebas funcionales
-- Ramiro Alejandro Garza Villarreal: Validación de pruebas de aceptación y unitarias.
-- Diego Dávila: Validación general.
-
-## Estándares aplicados
-
-Para este proyecto, estaremos siguiendo diferentes estándares para poder garantizar la calidad del software, usaremos los siguientes estándares:
-
-- **ISO/IEC 25010** - Modelo de calidad del software que define características como funcionalidad, confiabilidad, usabilidad, eficiencia, mantenibilidad y portabilidad.
-- **ISO/IEC 12207** - Estándar que establece procesos para el desarrollo y mantenimiento de software.
-- **ISO/IEC 29119** - Establece procesos para el diseño, ejecución y documentación de pruebas.
-- **ISO/IEC 9001** - Certifica que los procesos cumplen estándares de calidad internacionales.
-  También estaremos incorporando niveles de modelos de gestión como por ejemplo:
-- **CMMI - Nivel 3** - Los procesos estarán definidos y documentados durante todas las etapas del desarrollo, mejoras continuas mediante métricas de calidad y desempeño y usaremos práctica de gestión de riesgos y medición de calidad en el ciclo de vida del software.
+## Pruebas Automatizadas con Vitest, Jest, Cypress
 
 ### TC-001 – Redirección tras login exitoso
 
@@ -886,6 +868,30 @@ Para este proyecto, estaremos siguiendo diferentes estándares para poder garant
 - Componentes renderizados correctamente
 - No se lanzan errores de importación
 - Mocks se aplican correctamente
+
+
+---
+
+## Equipo de Calidad
+
+Roles de cada miembro del equipo:
+
+- Fernando Morán Fougerat: Validación de pruebas de estrés y unitarias.
+- Imanol Armando González Solís: Validación de pruebas de carga.
+- Rogelio Garza Rendón: Validación de pruebas funcionales
+- Ramiro Alejandro Garza Villarreal: Validación de pruebas de aceptación y unitarias.
+- Diego Dávila: Validación general.
+
+## Estándares aplicados
+
+Para este proyecto, estaremos siguiendo diferentes estándares para poder garantizar la calidad del software, usaremos los siguientes estándares:
+
+- **ISO/IEC 25010** - Modelo de calidad del software que define características como funcionalidad, confiabilidad, usabilidad, eficiencia, mantenibilidad y portabilidad.
+- **ISO/IEC 12207** - Estándar que establece procesos para el desarrollo y mantenimiento de software.
+- **ISO/IEC 29119** - Establece procesos para el diseño, ejecución y documentación de pruebas.
+- **ISO/IEC 9001** - Certifica que los procesos cumplen estándares de calidad internacionales.
+  También estaremos incorporando niveles de modelos de gestión como por ejemplo:
+- **CMMI - Nivel 3** - Los procesos estarán definidos y documentados durante todas las etapas del desarrollo, mejoras continuas mediante métricas de calidad y desempeño y usaremos práctica de gestión de riesgos y medición de calidad en el ciclo de vida del software.
 
 ---
 
