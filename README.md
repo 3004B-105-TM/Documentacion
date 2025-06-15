@@ -234,8 +234,9 @@ Gracias a este ejecutable, pudimos facilmente verificar pruebas de ejecutadores 
 - ✅ Tests automáticos con Jest/Vitest. (ver documentación Tests y Calidad)
 - ✅ Docker build & deploy:
   - Revisión y pruebas antes de producción.
+  
 
-
+Para hacer tests automaticos, correr npx vitest (en repo front).
 
 ## 8. Seguimiento del Reto
 
